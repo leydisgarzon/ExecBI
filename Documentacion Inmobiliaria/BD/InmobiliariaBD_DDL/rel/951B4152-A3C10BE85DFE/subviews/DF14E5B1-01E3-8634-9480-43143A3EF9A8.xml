@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="InmobiliariaBD - SubView_2v2" id="DF14E5B1-01E3-8634-9480-43143A3EF9A8">
+<createdBy>ley</createdBy>
+<modifiedBy>ley</modifiedBy>
+<createdTime>2016-07-19 21:00:47 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="1C85F93B-0509-EA42-CF1D-F25C932B8E2E" otype="Table" vid="5A667843-D68D-5D07-3D52-19E3B8C7703F">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="20" y="236" width="231" height="122"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="68BD995C-BBBD-D023-C66A-75A886DB1CF7" otype="Table" vid="F96894F1-F2E9-F892-DF0F-6DE8D63440FC">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="20" y="20" width="247" height="156"/>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="7CC2A7A8-B91E-CE39-CEED-BD011FC2D5EE" otype="FKIndexAssociation" vid_source="5A667843-D68D-5D07-3D52-19E3B8C7703F" vid_target="F96894F1-F2E9-F892-DF0F-6DE8D63440FC">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="135" y="236"/>
+<point x="135" y="176"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>

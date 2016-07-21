@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="InmobiliariaBD_DDL" id="BB57345F-EF5C-C82B-166D-4FF7BEBE68B4" version="3.5">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:21:58 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>BB57345F-EF5C-C82B-166D-4FF7BEBE68B4</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="4F9C355D-1DDE-8921-971B-30659406D4E5">
+<designStoragePath>C:\</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="8D719DFF-D728-5ECC-71B4-A4C13276EE03">
+<designStoragePath>E:\Estudio\Proyectos\Inmobiliaria\BD</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="F1327033-3E5C-BC32-931F-B6E6D1E5118D">
+<designStoragePath>E:\Estudio\Proyectos\Inmobiliaria\BD</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="CBE206E1-5F8B-1550-CC4C-AB53AB43E7BA">
+<designStoragePath>E:\Estudio\Proyectos\Inmobiliaria\BD</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="0E7BB20B-074C-F2B3-2C86-CF26A0A806BB">
+<designStoragePath>E:\Estudio\Proyectos\Inmobiliaria\BD</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="9C966E27-515A-0EBC-9F44-C54D2838552A">
+<designStoragePath>E:\Estudio\Proyectos\Inmobiliaria\BD</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="C6B47E8F-615E-EBEB-A60B-772F0AFFEF6A">
+<designStoragePath>E:\Estudio\Proyectos\Inmobiliaria\BD</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="A0E7A150-93E2-CD74-2797-6365F701CE74">
+<designStoragePath>E:\Estudio\Proyectos\Inmobiliaria\BD</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="F38C7554-C425-5791-7ED9-AE2C7F12B64C">
+<designStoragePath>E:\Estudio\Proyectos\Inmobiliaria\BD</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="7A9E70BF-45D2-8A37-0383-BC59D3BEF837">
+<designStoragePath>E:\Estudio\Proyectos\Inmobiliaria\BD</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="45E753EC-F2B2-EFF5-2A03-3AB56ABB057E">
+<designStoragePath>E:\Estudio\Proyectos\Inmobiliaria\BD</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="A29764D7-060C-BCF5-B616-38DB47CD258F">
+<designStoragePath>E:\Estudio\Proyectos\Inmobiliaria\BD</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="A0DECF1E-9BA1-6411-578D-109FEED9BCCC">
+<designStoragePath>E:\Estudio\Proyectos\Inmobiliaria\BD</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="BC161BBE-4DC1-1A6E-5A5C-BF1FAF8EB33A">
+<designStoragePath>E:\Estudio\Proyectos\Inmobiliaria\BD</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="B87E069F-E590-ACD2-6F82-E21C0F63CF4F">
+<designStoragePath>E:\Estudio\Proyectos\Inmobiliaria\BD</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

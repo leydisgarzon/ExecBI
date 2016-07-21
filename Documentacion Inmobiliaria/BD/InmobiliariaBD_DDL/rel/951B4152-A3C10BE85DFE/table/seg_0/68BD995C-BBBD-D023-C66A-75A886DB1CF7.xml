@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="68BD995C-BBBD-D023-C66A-75A886DB1CF7" schemaObject="066420E9-A71D-E368-8AD4-4AC7A4F6E26E" name="OFFICE">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INMOBILIARIA</sourceObjSchema>
+<sourceObjName>OFFICE</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 21:00:47 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<importedID>CB401476-6D50-4AD2-35D0-12DAAC7AB6E3</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OFFICE_ID" id="B95C4C14-2A72-9D57-00E0-F2BA4BE8801D">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 21:00:47 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<importedID>A2EFE8F3-BBEF-17CA-7257-F259B567D258</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OFFICE_FAX" id="D1648534-E478-8318-C62B-B84BF63844BC">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 21:00:47 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<importedID>2BCB4DE3-75BA-09EB-2106-4FAA5C2721B0</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OFFICE_TELEPHONE" id="5370BD89-B55C-C767-6774-4D7C71EAD064">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 21:00:47 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<importedID>E711D68D-5CDD-2643-FE6F-A9CF7961ABC9</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,15,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OFFICE_ADDRESS" id="DF1EAE01-B98C-4131-0BC6-59499A971A7F">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 21:00:47 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<importedID>F24F1810-378F-B8D2-409B-FA1CC0D7EC27</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7CC2A7A8-B91E-CE39-CEED-BD011FC2D5EE" referredColumn="3C6B8289-6BD9-81C0-15FD-A8C7C9091B62"/>
+</associations>
+</Column>
+<Column name="OFFICE_MANAGER" id="B16F95E0-4A35-9F9E-E5AB-A11143F02763">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>OFFICE</sourceObjSchema>
+<sourceObjName>OFFICE_MANAGER</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 21:00:47 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<importedID>753D07EC-5E16-646F-B75A-9194231F20E0</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5B019B05-22AC-C912-A805-28358CF09BF4" referredColumn="DCB8BF47-2466-9BB1-913B-DD8325365C1D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="644DEACD-CD9E-B0C1-C829-9656D2F5C139" name="OFFICE_PK">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 21:00:47 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<importedID>A60B3179-DBD2-FB84-35F1-8E55BEFEA533</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B95C4C14-2A72-9D57-00E0-F2BA4BE8801D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56C2A015-A5B4-6A12-BE34-6C924BE70A00" schemaObject="066420E9-A71D-E368-8AD4-4AC7A4F6E26E" name="OFFICE_PK">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 21:00:47 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<importedID>8BEEBF74-306C-5A19-0B12-D6F70D879364</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B95C4C14-2A72-9D57-00E0-F2BA4BE8801D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A3F9BF39-3A2C-7D66-3D5D-7EEE75715484" name="ADDRESS_OFFICE_FK">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 21:00:47 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF1EAE01-B98C-4131-0BC6-59499A971A7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA64F13E-A078-597F-F2B3-E94D163F2D37" name="OFFICE_MANAGER_FK">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 17:02:39 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B16F95E0-4A35-9F9E-E5AB-A11143F02763"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

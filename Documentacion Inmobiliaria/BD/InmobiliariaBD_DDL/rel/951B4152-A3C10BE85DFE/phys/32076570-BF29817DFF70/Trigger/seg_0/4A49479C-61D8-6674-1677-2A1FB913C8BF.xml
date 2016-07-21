@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TMANAGER_SEQ" directorySegmentName="seg_0" id="4A49479C-61D8-6674-1677-2A1FB913C8BF">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 20:20:34 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<actions>INSERT</actions>
+<body>begin&lt;br/&gt;  SELECT manager_seq.NEXTVAL INTO :NEW.MANAGER_id FROM DUAL;&lt;br/&gt;end;</body>
+<triggerTime>BEFORE</triggerTime>
+<owner>8565118F-4031-1450-D084-6EB3F98ED84A</owner>
+<table>5EB1BCD6-DD12-0818-B52F-900C86445C8A</table>
+</TriggerOraclev10g>

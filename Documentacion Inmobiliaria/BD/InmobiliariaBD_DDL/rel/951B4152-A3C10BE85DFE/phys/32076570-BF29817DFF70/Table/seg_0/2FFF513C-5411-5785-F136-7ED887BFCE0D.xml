@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="INTERVIEW" directorySegmentName="seg_0" id="2FFF513C-5411-5785-F136-7ED887BFCE0D">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 15:47:45 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<schemaObject>066420E9-A71D-E368-8AD4-4AC7A4F6E26E</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>698D69BD-C280-B626-DDA1-F517A79E041F</segment>
+<tableSpace>87A654A4-F018-61FC-3D12-297EAF65A884</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="INTERVIEW_EMPLOYEE" id="6A171D49-F4D4-4C4E-8B21-33C086CECDDD">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 15:47:46 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="INTERVIEW_INQUILINO" id="82A9DE7C-9846-3605-B32C-A719F9B087A4">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 15:47:46 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="INTERVIEW_DATE" id="99EF4312-8410-AB58-E984-E82EF4665597">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 15:47:46 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="INTERVIEW_ID" id="D3F850D8-7426-6C2C-0D10-05586D232493">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 15:47:46 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="INTEVIEW_COMMENTS" id="FBD4BE0F-A32A-9E31-17AA-8DEF67582CAD">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 15:47:46 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="INTERVIEW_EMPLOYEE_FK" id="7CFEBDBF-0675-E639-EBEB-AE5E872A658D">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 15:47:47 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="INTERVIEW_INQUILINO_FK" id="DA20C076-9D95-F308-D53B-C0A8503FC9F4">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 15:47:47 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="INTERVIEW_PK" id="C3213A93-EEA9-168A-AC6A-22E9BCB7B859">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 15:47:47 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<schemaObject>066420E9-A71D-E368-8AD4-4AC7A4F6E26E</schemaObject>
+<segment>8F4F7FFE-11F6-FE9C-11E3-4E7EF4B5A3BC</segment>
+<tableSpace>87A654A4-F018-61FC-3D12-297EAF65A884</tableSpace>
+<indexSegment>8F4F7FFE-11F6-FE9C-11E3-4E7EF4B5A3BC</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

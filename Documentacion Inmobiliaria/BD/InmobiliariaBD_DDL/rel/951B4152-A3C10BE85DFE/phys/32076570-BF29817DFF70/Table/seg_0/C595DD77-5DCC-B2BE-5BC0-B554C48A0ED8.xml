@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="INQUILINO" directorySegmentName="seg_0" id="C595DD77-5DCC-B2BE-5BC0-B554C48A0ED8">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:28:48 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<schemaObject>066420E9-A71D-E368-8AD4-4AC7A4F6E26E</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>0767DD96-E459-45A3-51E0-7C11273CBBFE</segment>
+<tableSpace>2E0B76C0-1EF0-D9FD-2CF1-C08FB950B00A</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="INQUILINO_OFFICE" id="07C9D963-B1BB-902D-4DC6-40DB79C45E3E">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:28:48 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="INQUILINO_ADDRESS" id="0F3D0D61-76BF-D5A5-A301-E91555A866A9">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:28:48 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="INQUILINO_NAME" id="491E4E31-F14F-6DB5-2B98-0DDAEAFA76D2">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:28:48 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="INQUILINO_ID" id="62329FDA-B7F5-E19C-EDC4-94D4100B738C">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:28:48 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="INMUEBLE_TYPE" id="7BDC106D-9551-0C79-298B-14115D39D0C3">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:28:48 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="INQUILINO_TELEPHONE" id="DC107115-956B-EF72-AD24-A36566FFBCDB">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:28:48 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MAX_IMPORT" id="FE7A6B27-00E0-61F1-8FC7-C33F1DC83D15">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:28:48 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="INQUILINO_OFFICE_FK" id="A6551FAB-E3FD-68A7-B512-BB19A09A70DA">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:28:48 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="INQUILINO_ADDRESS_FK" id="BFECFDF0-4C4C-021E-55D9-652C25418D65">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:28:48 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="INQUILINO_INMUEBLETYPE_FK" id="D37A6348-005C-3D81-1370-11F5D53BA8AF">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:28:48 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="INQUILINO_PK" id="8C415257-66E0-28CA-A12B-0A773297DD8B">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:28:48 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<schemaObject>066420E9-A71D-E368-8AD4-4AC7A4F6E26E</schemaObject>
+<segment>065B2E7F-5F05-5264-702E-35CEA1DCAD58</segment>
+<tableSpace>2E0B76C0-1EF0-D9FD-2CF1-C08FB950B00A</tableSpace>
+<indexSegment>065B2E7F-5F05-5264-702E-35CEA1DCAD58</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

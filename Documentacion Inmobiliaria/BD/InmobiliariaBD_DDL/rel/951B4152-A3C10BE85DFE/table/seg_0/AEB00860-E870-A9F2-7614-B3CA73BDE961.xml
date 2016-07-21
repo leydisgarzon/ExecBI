@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AEB00860-E870-A9F2-7614-B3CA73BDE961" schemaObject="066420E9-A71D-E368-8AD4-4AC7A4F6E26E" name="PROPRIETOR">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:22:28 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<importedID>ED543603-CDFB-CBF5-1BB0-82B742DFA440</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PROPRIETOR_ID" id="63CE7E9E-5450-B4C1-43AB-65A5E64AAD02">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:22:28 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<importedID>AE26CDA8-7B32-D9EF-7AFB-1B03DE3C343B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDRESS" id="8414A127-0FF2-01D1-9A1E-E56F38EF33AC">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:22:28 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<importedID>4F6E51CB-7A4B-EDE1-D031-9B8BC3A66C52</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="09D0C0D6-A11B-6822-7BDB-41FDE91AAF6E" referredColumn="3C6B8289-6BD9-81C0-15FD-A8C7C9091B62"/>
+</associations>
+</Column>
+<Column name="NAME" id="A7C56CF3-CC42-B116-797F-324C95889CCD">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:22:28 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<importedID>FD72FA57-380E-48F3-67EE-DB5989E3490C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEPHONE" id="A3CD8B41-8A4A-CD51-77F5-438BF6116217">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:22:28 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<importedID>3C48985D-2AB1-3ED5-7409-6C1E010D19F8</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AEC58CF8-47C1-741E-CE3F-409DF86E21A2" name="PROPRIETOR_PK">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:22:28 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<importedID>E0701550-B9C7-B282-6F57-4BC266FD0223</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63CE7E9E-5450-B4C1-43AB-65A5E64AAD02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C3E0740-DC04-78DA-8380-BFA8B8952682" schemaObject="066420E9-A71D-E368-8AD4-4AC7A4F6E26E" name="PROPRIETOR_PK">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:22:28 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<importedID>99AD8FF0-C4AD-840F-DCD4-95C7D4B06929</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63CE7E9E-5450-B4C1-43AB-65A5E64AAD02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7EF39E4E-ADAD-ED30-7BA5-6A91BDE74C6D" name="ADDRESS_FK">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:22:28 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8414A127-0FF2-01D1-9A1E-E56F38EF33AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

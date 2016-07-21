@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F2210850-B95C-6562-93C8-5F2E7F6AED4B" schemaObject="066420E9-A71D-E368-8AD4-4AC7A4F6E26E" name="PARIENTE">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INMOBILIARIA</sourceObjSchema>
+<sourceObjName>PARIENTE</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 18:42:35 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<ordsAlias>parientev1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RELATION" id="08E7EFC4-F039-09AA-4012-D37B1162B9B9">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>PARIENTEv1</sourceObjSchema>
+<sourceObjName>RELATION</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 18:42:35 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PARIENTE_ID" id="F4552C2E-C2DF-CB0D-D03F-F62B0C293FE4">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>PARIENTEv1</sourceObjSchema>
+<sourceObjName>PARIENTE_ID</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 18:42:35 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PARIENTE_NAME" id="11BDC1CF-69BA-F642-7B32-8056315E61E5">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>PARIENTEv1</sourceObjSchema>
+<sourceObjName>PARIENTE_NAME</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 18:42:35 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PARIENTE_TELEPHONE" id="F474B83D-3295-0A14-0924-D56D70890E6A">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>PARIENTEv1</sourceObjSchema>
+<sourceObjName>PARIENTE_TELEPHONE</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 18:42:35 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PARIENTE_ADDRESS" id="BB80FC2E-1627-2C13-350B-F951507EF240">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>PARIENTEv1</sourceObjSchema>
+<sourceObjName>PARIENTE_ADDRESS</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 18:42:35 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3029A3BA-35AE-CBCA-9F3F-38B7CDB0F950" referredColumn="3C6B8289-6BD9-81C0-15FD-A8C7C9091B62"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FC14C0E0-2052-A029-9566-ECA37823E2E5" name="PARIENTE_PK">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INMOBILIARIA</sourceObjSchema>
+<sourceObjName>PARIENTE_PKv1</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 18:42:35 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4552C2E-C2DF-CB0D-D03F-F62B0C293FE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF402033-C668-6F42-24AC-A6F36210DCCC" schemaObject="066420E9-A71D-E368-8AD4-4AC7A4F6E26E" name="PARIENTE_PKv1">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INMOBILIARIA</sourceObjSchema>
+<sourceObjName>PARIENTE_PK</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 18:42:35 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4552C2E-C2DF-CB0D-D03F-F62B0C293FE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B42B18E-E60B-2489-A6D1-412354DE17C5" name="PARIENTE_ADDRESS_FK">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 18:42:35 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB80FC2E-1627-2C13-350B-F951507EF240"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

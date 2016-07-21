@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TEMPLOYEE_SEQ" directorySegmentName="seg_0" id="F951445E-DA6C-0A13-C45E-C4BE78922253">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INMOBILIARIA</sourceObjSchema>
+<sourceObjName>TEMPLOYEE_SEQ</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 21:55:23 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<actions>INSERT</actions>
+<body>BEGIN&lt;br/&gt;  :NEW.EMPLOYEE_ID := EMPLOYEE_SEQ.NEXTVAL;&lt;br/&gt;END;</body>
+<triggerTime>BEFORE</triggerTime>
+<owner>8565118F-4031-1450-D084-6EB3F98ED84A</owner>
+<table>805775B8-04CE-F39B-0C85-C249A6898920</table>
+</TriggerOraclev10g>

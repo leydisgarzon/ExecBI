@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="98E46632-70B7-8CB8-AE56-9E35B194C970" schemaObject="066420E9-A71D-E368-8AD4-4AC7A4F6E26E" name="INMUEBLE_TYPE">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INMOBILIARIA</sourceObjSchema>
+<sourceObjName>INMUEBLE_TYPE</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:03:22 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TYPE_ID" id="7A99A74E-D21C-7440-FFFC-D322AD36B8D8">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INMUEBLE_TYPE</sourceObjSchema>
+<sourceObjName>TYPE_ID</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:03:22 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYPE_NAME" id="8C9387F0-1FAA-8E23-8A56-AB089807D305">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INMUEBLE_TYPE</sourceObjSchema>
+<sourceObjName>TYPE_NAME</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:03:22 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5C0CC5B1-6AB3-AA55-02CF-45EB52F15799" schemaObject="066420E9-A71D-E368-8AD4-4AC7A4F6E26E" name="INMUEBLE_TYPE_PK">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INMOBILIARIA</sourceObjSchema>
+<sourceObjName>SYS_C007443</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:03:22 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A99A74E-D21C-7440-FFFC-D322AD36B8D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

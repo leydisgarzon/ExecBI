@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="INMOBILIARIA" directorySegmentName="seg_0" id="066420E9-A71D-E368-8AD4-4AC7A4F6E26E">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:22:28 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<importedID>EEFC91B6-D4DC-F25D-C740-0E378990AE00</importedID>
+</SchemaObject>

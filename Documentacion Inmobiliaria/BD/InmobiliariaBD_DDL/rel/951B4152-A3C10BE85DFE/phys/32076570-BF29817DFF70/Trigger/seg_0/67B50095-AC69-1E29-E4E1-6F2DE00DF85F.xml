@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TPARIENTE_SEQ" directorySegmentName="seg_0" id="67B50095-AC69-1E29-E4E1-6F2DE00DF85F">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INMOBILIARIA</sourceObjSchema>
+<sourceObjName>TPARIENTE_SEQ</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 21:58:10 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<actions>INSERT</actions>
+<body>BEGIN :NEW.PARIENTE_ID := INMOBILIARIA.pariente_seq.NEXTVAL;&lt;br/&gt;END;</body>
+<triggerTime>BEFORE</triggerTime>
+<owner>8565118F-4031-1450-D084-6EB3F98ED84A</owner>
+<table>6D5F6BFA-9817-50B5-6D07-B1DCC5642920</table>
+</TriggerOraclev10g>

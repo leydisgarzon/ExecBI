@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TINTERVIEW_SEQ" directorySegmentName="seg_0" id="A05FC9FD-5753-229D-32BE-F981320E0F24">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INMOBILIARIA</sourceObjSchema>
+<sourceObjName>TINTERVIEW_SEQ</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 15:47:47 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<actions>INSERT</actions>
+<body>BEGIN&lt;br/&gt; :NEW.INTERVIEW_ID  := INTERVIEW_SEQ.NEXTVAL;&lt;br/&gt;END;</body>
+<triggerTime>BEFORE</triggerTime>
+<owner>AB3326EC-8F3F-00D2-E4B2-DC833B5238CD</owner>
+<table>2FFF513C-5411-5785-F136-7ED887BFCE0D</table>
+</TriggerOraclev10g>

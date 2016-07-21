@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="CONTRACT" directorySegmentName="seg_0" id="ECFD97BE-E173-301A-EC9C-9B5E1AE67BC4">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 18:02:55 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<schemaObject>066420E9-A71D-E368-8AD4-4AC7A4F6E26E</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>698D69BD-C280-B626-DDA1-F517A79E041F</segment>
+<tableSpace>87A654A4-F018-61FC-3D12-297EAF65A884</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CONTRACT_INQUILINO" id="00734089-F9B9-594E-80B0-EF03540AE5FE">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 18:02:55 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CONTRACT_EMPLOYEE" id="044E570F-C0D6-A3B1-28DB-C7B55AB0DAF0">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 18:02:55 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CONTRACT_INMUEBLE" id="080DFCAD-23DD-DF06-4E6D-3A35B6F72BED">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 18:02:55 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPOSITED" id="1DAEE6F3-B3E1-7D85-632E-4DC68737A625">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 18:02:55 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATE_IN" id="3FD185D4-CEA9-4207-6284-EF57AC4A1D97">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 18:02:55 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PAY_TYPE" id="804E97B0-D734-5AC2-9E06-A276A7C00DA6">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 18:02:55 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATE_OUT" id="964CD6BD-67D9-0486-FEB4-03A3351846D0">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 18:02:55 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CONTRACT_IMPORT" id="A1FBDF0F-4AA8-A0D6-6801-F5AB8BD20D7A">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 18:02:55 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CONTRACT_ID" id="A238E47E-64CB-B0C8-694F-F4C9C5A1F2F6">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 18:02:55 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TOTAL_MONTHS" id="E249A404-E176-CF7C-3041-7FDF494184DB">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 18:02:55 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPOSIT_IMPORT" id="F48D82E3-9C71-CE17-EDB6-7CB37537C334">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 18:02:55 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CONTRACT_INQUILINO_FK" id="1456DC41-783F-1975-CFE6-210AE056631D">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 18:02:55 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CONTRACT_INMUEBLE_FK" id="DD5A53F9-945A-7987-1694-562EA7731D9F">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 18:02:55 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CONTRACT_EMPLOYEE_FK" id="F1850369-7FC3-882B-3ADF-5C80C08F2DF9">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 18:02:55 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CONTRACT_PK" id="B00E3C53-252A-06E0-1EE5-AC234DA8832F">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 18:02:55 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<schemaObject>066420E9-A71D-E368-8AD4-4AC7A4F6E26E</schemaObject>
+<segment>8F4F7FFE-11F6-FE9C-11E3-4E7EF4B5A3BC</segment>
+<tableSpace>87A654A4-F018-61FC-3D12-297EAF65A884</tableSpace>
+<indexSegment>8F4F7FFE-11F6-FE9C-11E3-4E7EF4B5A3BC</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

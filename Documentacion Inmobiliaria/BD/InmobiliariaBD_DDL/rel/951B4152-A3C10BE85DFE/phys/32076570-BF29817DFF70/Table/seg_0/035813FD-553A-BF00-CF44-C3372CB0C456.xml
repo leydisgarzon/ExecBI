@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="ANNOUNCE" directorySegmentName="seg_0" id="035813FD-553A-BF00-CF44-C3372CB0C456">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 16:26:26 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<schemaObject>066420E9-A71D-E368-8AD4-4AC7A4F6E26E</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>698D69BD-C280-B626-DDA1-F517A79E041F</segment>
+<tableSpace>87A654A4-F018-61FC-3D12-297EAF65A884</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ANNOUNCE_JOURNAL" id="1D5EED54-7BAF-AC61-C361-73473C0A91C9">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 16:26:26 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ANNOUNCE_DATE" id="4449D118-B58F-44D8-67F0-6674A42595CB">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 16:26:26 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ANNOUNCE_COST" id="71DA81C8-1873-16A8-9EEA-22A8E69F1A71">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 16:26:26 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ANNOUNCE_INMUEBLE" id="B8D263BF-ACAF-6EE1-2FA7-C5A0CD1EF96C">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 16:26:26 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ANNOUNCE_ID" id="DC4AFE1C-7670-2ED4-26C7-DA0E829AA303">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 16:26:26 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ANNOUNCE_INMUEBLE_FK" id="34FE9919-B7AC-E0B6-EB6D-7BE48DE34E12">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 16:26:26 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ANNOUNCE_JOURNAL_FK" id="EB529730-DE84-3E0B-29D0-A612EAD456E8">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 16:26:26 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ANNOUNCE_PK" id="3754B390-F0B2-2696-497F-FEA81A2C8058">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 16:26:26 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<schemaObject>066420E9-A71D-E368-8AD4-4AC7A4F6E26E</schemaObject>
+<segment>8F4F7FFE-11F6-FE9C-11E3-4E7EF4B5A3BC</segment>
+<tableSpace>87A654A4-F018-61FC-3D12-297EAF65A884</tableSpace>
+<indexSegment>8F4F7FFE-11F6-FE9C-11E3-4E7EF4B5A3BC</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TINSPECTION_SEQ" directorySegmentName="seg_0" id="1DE2BEAA-AB99-8656-72A7-8B555E07499A">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INMOBILIARIA</sourceObjSchema>
+<sourceObjName>TINSPECTION_SEQ</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 16:33:50 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<actions>INSERT</actions>
+<body>BEGIN&lt;br/&gt; :NEW.INSPECTION_ID  := INSPECTION_SEQ.NEXTVAL;&lt;br/&gt;END;</body>
+<triggerTime>BEFORE</triggerTime>
+<owner>AB3326EC-8F3F-00D2-E4B2-DC833B5238CD</owner>
+<table>CC0D6F0D-4053-42B5-B99B-BF363CD867B1</table>
+</TriggerOraclev10g>

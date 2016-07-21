@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="06777359-821E-3761-D838-4DBAD1B0E16D" name="InmobiliariaBD" visible="true"/>
+   <object objectType="sub_view" objectID="ABBCCDA5-D650-79EB-FFB2-DF786A7B20EE" name="InmobiliariaBD - SubView_1" visible="false"/>
+   <object objectType="sub_view" objectID="603CB364-4834-1859-36A6-47735D59D4CA" name="InmobiliariaBD - SubView_2v1" visible="false"/>
+   <object objectType="sub_view" objectID="DF14E5B1-01E3-8634-9480-43143A3EF9A8" name="InmobiliariaBD - SubView_2v2" visible="false"/>
+   <object objectType="sub_view" objectID="B24E5D86-FB38-5FB8-BCAF-D5B522D7F069" name="InmobiliariaBD - SubView_2v3" visible="false"/>
+   <object objectType="sub_view" objectID="C96259C9-CDF7-BBD1-C69C-A2EAC888436E" name="InmobiliariaBD - SubView_2v4" visible="false"/>
+   <object objectType="sub_view" objectID="C6B4C185-86F9-D6E9-E246-4C151221316C" name="InmobiliariaBD - SubView_2v5" visible="false"/>
+   <object objectType="sub_view" objectID="50CA344E-BC22-EF3C-6659-3A5D6CA4C91A" name="InmobiliariaBD - SubView_2v6" visible="false"/>
+   <object objectType="sub_view" objectID="96666F3C-9BBA-7D72-C834-D684E8BEA5AE" name="InmobiliariaBD_DDL" visible="true"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

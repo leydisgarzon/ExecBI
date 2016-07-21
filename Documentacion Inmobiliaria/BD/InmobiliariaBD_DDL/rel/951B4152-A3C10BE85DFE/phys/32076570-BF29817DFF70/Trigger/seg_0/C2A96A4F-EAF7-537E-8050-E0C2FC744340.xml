@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="APEX$_ACL_T1" directorySegmentName="seg_0" id="C2A96A4F-EAF7-537E-8050-E0C2FC744340">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 15:27:13 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body>begin&lt;br/&gt;    --&lt;br/&gt;    -- maintain pk and timestamps&lt;br/&gt;    --&lt;br/&gt;    :new.username := upper(:new.username);&lt;br/&gt;    if inserting and :new.id is null then&lt;br/&gt;        select to_number(sys_guid(),&apos;XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&apos;) into :new.id from dual;&lt;br/&gt;    end if;&lt;br/&gt;    if inserting then&lt;br/&gt;        :new.created_on := sysdate;&lt;br/&gt;        :new.created_by := nvl(v(&apos;APP_USER&apos;),user);&lt;br/&gt;        :new.updated_on := sysdate;&lt;br/&gt;        :new.updated_by := nvl(v(&apos;APP_USER&apos;),user);&lt;br/&gt;    elsif updating then&lt;br/&gt;        :new.updated_on := sysdate;&lt;br/&gt;        :new.updated_by := nvl(v(&apos;APP_USER&apos;),user);&lt;br/&gt;    end if;&lt;br/&gt;end;</body>
+<triggerTime>BEFORE</triggerTime>
+<owner>8565118F-4031-1450-D084-6EB3F98ED84A</owner>
+<table>C79756DF-ECF5-B4FC-FD6D-44536C4C1E69</table>
+</TriggerOraclev10g>

@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TJOURNAL_SEQ" directorySegmentName="seg_0" id="1711B734-6E85-754D-833C-F20D671E02C6">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:22:13 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<actions>INSERT</actions>
+<body>begin&lt;br/&gt;  SELECT journal_seq.NEXTVAL INTO :NEW.JOURNAL_id FROM DUAL;&lt;br/&gt;end;</body>
+<triggerTime>BEFORE</triggerTime>
+<owner>8565118F-4031-1450-D084-6EB3F98ED84A</owner>
+<table>E1B92D64-4C1A-3074-2066-B623BC849175</table>
+</TriggerOraclev10g>

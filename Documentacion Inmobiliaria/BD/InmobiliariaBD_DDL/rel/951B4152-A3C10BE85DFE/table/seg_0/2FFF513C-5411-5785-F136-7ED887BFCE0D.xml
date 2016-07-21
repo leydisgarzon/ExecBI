@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2FFF513C-5411-5785-F136-7ED887BFCE0D" schemaObject="066420E9-A71D-E368-8AD4-4AC7A4F6E26E" name="INTERVIEW">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INMOBILIARIA</sourceObjSchema>
+<sourceObjName>INTERVIEW</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 15:47:45 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="INTERVIEW_ID" id="D3F850D8-7426-6C2C-0D10-05586D232493">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INTERVIEW</sourceObjSchema>
+<sourceObjName>INTERVIEW_ID</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 15:47:46 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INTERVIEW_DATE" id="99EF4312-8410-AB58-E984-E82EF4665597">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INTERVIEW</sourceObjSchema>
+<sourceObjName>INTERVIEW_DATE</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 15:47:46 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INTERVIEW_EMPLOYEE" id="6A171D49-F4D4-4C4E-8B21-33C086CECDDD">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INTERVIEW</sourceObjSchema>
+<sourceObjName>INTERVIEW_EMPLOYEE</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 15:47:46 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BCEEE9DF-29AD-FFE0-3B50-9BEED11A8E47" referredColumn="3201BF3F-538F-EF47-6388-28E599A7961E"/>
+</associations>
+</Column>
+<Column name="INTEVIEW_COMMENTS" id="FBD4BE0F-A32A-9E31-17AA-8DEF67582CAD">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INTERVIEW</sourceObjSchema>
+<sourceObjName>INTEVIEW_COMMENTS</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 15:47:46 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INTERVIEW_INQUILINO" id="82A9DE7C-9846-3605-B32C-A719F9B087A4">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INTERVIEW</sourceObjSchema>
+<sourceObjName>INTERVIEW_INQUILINO</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 15:47:46 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B96A58CB-B5C7-4940-D8BB-D8BD65723D18" referredColumn="62329FDA-B7F5-E19C-EDC4-94D4100B738C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C3213A93-EEA9-168A-AC6A-22E9BCB7B859" schemaObject="066420E9-A71D-E368-8AD4-4AC7A4F6E26E" name="INTERVIEW_PK">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INMOBILIARIA</sourceObjSchema>
+<sourceObjName>SYS_C007461</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 15:47:46 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3F850D8-7426-6C2C-0D10-05586D232493"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7CFEBDBF-0675-E639-EBEB-AE5E872A658D" name="INTERVIEW_EMPLOYEE_FK">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 15:47:47 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A171D49-F4D4-4C4E-8B21-33C086CECDDD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA20C076-9D95-F308-D53B-C0A8503FC9F4" name="INTERVIEW_INQUILINO_FK">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 15:47:47 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82A9DE7C-9846-3605-B32C-A719F9B087A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

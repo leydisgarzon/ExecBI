@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="900DF047-B059-D4D0-7222-1B6BD1235468" schemaObject="066420E9-A71D-E368-8AD4-4AC7A4F6E26E" name="SUPERVISOR">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INMOBILIARIA</sourceObjSchema>
+<sourceObjName>SUPERVISOR</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 22:00:38 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<ordsAlias>supervisorv3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SUPERVISOR_IDEMPLOYEE" id="1472D2E7-0435-B2B7-069C-D5D1D24026A4">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>SUPERVISORv3</sourceObjSchema>
+<sourceObjName>SUPERVISOR_IDEMPLOYEE</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 22:00:38 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6B331C07-5C61-C1B3-C240-B1E41930DDAA" referredColumn="3201BF3F-538F-EF47-6388-28E599A7961E"/>
+</associations>
+</Column>
+<Column name="SUPERVISOR_OFFICE" id="6FF02AEC-F5E4-6D51-5041-0C9C49DD5D3E">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>SUPERVISORv3</sourceObjSchema>
+<sourceObjName>SUPERVISOR_OFFICE</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 22:00:38 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9C5378A6-BB80-0740-6D46-614E798AF8F0" referredColumn="B95C4C14-2A72-9D57-00E0-F2BA4BE8801D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6E117099-5228-FA36-606B-77FC5FC6EBC8" schemaObject="066420E9-A71D-E368-8AD4-4AC7A4F6E26E" name="SUPERVISORv3_PK">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INMOBILIARIA</sourceObjSchema>
+<sourceObjName>SYS_C007434</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 22:00:38 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1472D2E7-0435-B2B7-069C-D5D1D24026A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D89D5054-46F2-FFB6-7ACA-4B51339C1FAD" name="SUPERVISOR_EMPLOYEE_FK">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 22:00:38 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1472D2E7-0435-B2B7-069C-D5D1D24026A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="694C0A46-036A-D5BE-D1F6-6D7C07D46DE1" name="SUPERVISOR_OFFICE_FK">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 22:00:38 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6FF02AEC-F5E4-6D51-5041-0C9C49DD5D3E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

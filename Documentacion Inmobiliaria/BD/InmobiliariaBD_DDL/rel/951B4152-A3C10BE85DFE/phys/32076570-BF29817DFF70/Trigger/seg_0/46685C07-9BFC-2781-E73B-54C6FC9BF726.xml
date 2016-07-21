@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TINQUILINO_SEQ" directorySegmentName="seg_0" id="46685C07-9BFC-2781-E73B-54C6FC9BF726">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INMOBILIARIA</sourceObjSchema>
+<sourceObjName>TINQUILINO_SEQ</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:28:48 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<actions>INSERT</actions>
+<body>BEGIN&lt;br/&gt;:NEW.INQUILINO_ID := TINQUILINO_SEQ.NEXTVAL;&lt;br/&gt;END;</body>
+<triggerTime>BEFORE</triggerTime>
+<owner>8565118F-4031-1450-D084-6EB3F98ED84A</owner>
+<table>C595DD77-5DCC-B2BE-5BC0-B554C48A0ED8</table>
+</TriggerOraclev10g>

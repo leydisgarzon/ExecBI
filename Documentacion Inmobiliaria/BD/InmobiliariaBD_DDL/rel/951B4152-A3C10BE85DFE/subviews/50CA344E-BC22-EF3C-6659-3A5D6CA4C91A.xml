@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="InmobiliariaBD - SubView_2v6" id="50CA344E-BC22-EF3C-6659-3A5D6CA4C91A">
+<createdBy>ley</createdBy>
+<modifiedBy>ley</modifiedBy>
+<createdTime>2016-07-19 21:56:30 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="68BD995C-BBBD-D023-C66A-75A886DB1CF7" otype="Table" vid="E1C1CA4F-F593-9DB9-7C16-AE6ED21E9D66">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="685" y="20" width="247" height="156"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="805775B8-04CE-F39B-0C85-C249A6898920" otype="Table" vid="57FE1886-0BD3-8499-41BB-CA3D23CACA65">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="342" y="20" width="293" height="226"/>
+</OView>
+</objectViews>
+</Diagram>

@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TADDRESS_SEQ" directorySegmentName="seg_0" id="2C543542-0F5A-5FDD-88FB-C2F4C86779C1">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 22:30:27 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<actions>INSERT</actions>
+<body>begin&lt;br/&gt;  SELECT address_seq.NEXTVAL INTO :NEW.address_id FROM DUAL;&lt;br/&gt;end;</body>
+<triggerTime>BEFORE</triggerTime>
+<owner>8565118F-4031-1450-D084-6EB3F98ED84A</owner>
+<table>8B94D20C-F837-88B1-4BFC-013D7A39F394</table>
+</TriggerOraclev10g>

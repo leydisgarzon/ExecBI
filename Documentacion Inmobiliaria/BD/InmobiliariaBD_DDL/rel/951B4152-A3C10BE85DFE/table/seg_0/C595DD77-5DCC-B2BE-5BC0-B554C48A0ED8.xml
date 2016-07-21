@@ -1,0 +1,173 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C595DD77-5DCC-B2BE-5BC0-B554C48A0ED8" schemaObject="066420E9-A71D-E368-8AD4-4AC7A4F6E26E" name="INQUILINO">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INMOBILIARIA</sourceObjSchema>
+<sourceObjName>INQUILINO</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:28:48 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="INQUILINO_ID" id="62329FDA-B7F5-E19C-EDC4-94D4100B738C">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INQUILINO</sourceObjSchema>
+<sourceObjName>INQUILINO_ID</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:28:48 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INQUILINO_NAME" id="491E4E31-F14F-6DB5-2B98-0DDAEAFA76D2">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INQUILINO</sourceObjSchema>
+<sourceObjName>INQUILINO_NAME</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:28:48 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INQUILINO_ADDRESS" id="0F3D0D61-76BF-D5A5-A301-E91555A866A9">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INQUILINO</sourceObjSchema>
+<sourceObjName>INQUILINO_ADDRESS</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:28:48 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5B7C1AD5-0857-AE46-DD5E-1F031401C0F3" referredColumn="3C6B8289-6BD9-81C0-15FD-A8C7C9091B62"/>
+</associations>
+</Column>
+<Column name="INQUILINO_TELEPHONE" id="DC107115-956B-EF72-AD24-A36566FFBCDB">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INQUILINO</sourceObjSchema>
+<sourceObjName>INQUILINO_TELEPHONE</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:28:48 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,15,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INMUEBLE_TYPE" id="7BDC106D-9551-0C79-298B-14115D39D0C3">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INQUILINO</sourceObjSchema>
+<sourceObjName>INMUEBLE_TYPE</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:28:48 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="370BBF29-0C72-D8D5-1D87-2554CDBA8B42" referredColumn="7A99A74E-D21C-7440-FFFC-D322AD36B8D8"/>
+</associations>
+</Column>
+<Column name="MAX_IMPORT" id="FE7A6B27-00E0-61F1-8FC7-C33F1DC83D15">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INQUILINO</sourceObjSchema>
+<sourceObjName>MAX_IMPORT</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:28:48 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INQUILINO_OFFICE" id="07C9D963-B1BB-902D-4DC6-40DB79C45E3E">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INQUILINO</sourceObjSchema>
+<sourceObjName>INQUILINO_OFFICE</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:28:48 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F6C90DE2-9C96-0C5C-0DBD-D4833E4EE884" referredColumn="B95C4C14-2A72-9D57-00E0-F2BA4BE8801D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8C415257-66E0-28CA-A12B-0A773297DD8B" schemaObject="066420E9-A71D-E368-8AD4-4AC7A4F6E26E" name="INQUILINO_PK">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INMOBILIARIA</sourceObjSchema>
+<sourceObjName>SYS_C007451</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:28:48 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62329FDA-B7F5-E19C-EDC4-94D4100B738C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BFECFDF0-4C4C-021E-55D9-652C25418D65" name="INQUILINO_ADDRESS_FK">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:28:48 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F3D0D61-76BF-D5A5-A301-E91555A866A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D37A6348-005C-3D81-1370-11F5D53BA8AF" name="INQUILINO_INMUEBLETYPE_FK">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:28:48 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7BDC106D-9551-0C79-298B-14115D39D0C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A6551FAB-E3FD-68A7-B512-BB19A09A70DA" name="INQUILINO_OFFICE_FK">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:28:48 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07C9D963-B1BB-902D-4DC6-40DB79C45E3E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D9A21E58-56AC-8E42-D209-CF550C7CB7DD" schemaObject="066420E9-A71D-E368-8AD4-4AC7A4F6E26E" name="MANAGER">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INMOBILIARIA</sourceObjSchema>
+<sourceObjName>MANAGER</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:23:46 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DATE_IN" id="E4774593-9742-9DC0-1DE7-4964E49E1D1A">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:33:03 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MANAGER_ID" id="DCB8BF47-2466-9BB1-913B-DD8325365C1D">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:33:03 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0F9A1BAE-7EB4-A19D-603E-471B478E1832" referredColumn="3201BF3F-538F-EF47-6388-28E599A7961E"/>
+</associations>
+</Column>
+<Column name="CAR_EXPENSE" id="B8B77325-0C52-7776-3C06-725A87EC7BFB">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:33:03 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BONUS" id="15AAFD2B-2C98-A136-122E-DE32BD3413DF">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:33:03 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="89948733-28A0-33B8-4D11-4B8D37CCBF85" name="MANAGER_PK">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:33:03 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCB8BF47-2466-9BB1-913B-DD8325365C1D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE6D4AB3-94CE-5783-22FC-4237CEA6230A" schemaObject="066420E9-A71D-E368-8AD4-4AC7A4F6E26E" name="MANAGER_PK">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjSchema>INMOBILIARIA</sourceObjSchema>
+<sourceObjName>MANAGER_PK</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 16:43:18 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<importedID>AFB9E12C-58C8-5C9F-53F8-237B3846F695</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCB8BF47-2466-9BB1-913B-DD8325365C1D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D02D6190-EC2B-F70A-78EA-EA098AD83A16" name="MANAGER_EMPLOYEE_FK">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 16:43:18 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCB8BF47-2466-9BB1-913B-DD8325365C1D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

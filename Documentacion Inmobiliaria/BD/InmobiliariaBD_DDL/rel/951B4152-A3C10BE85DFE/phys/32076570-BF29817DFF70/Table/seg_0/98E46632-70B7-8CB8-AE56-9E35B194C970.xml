@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="INMUEBLE_TYPE" directorySegmentName="seg_0" id="98E46632-70B7-8CB8-AE56-9E35B194C970">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:03:22 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<schemaObject>066420E9-A71D-E368-8AD4-4AC7A4F6E26E</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>0767DD96-E459-45A3-51E0-7C11273CBBFE</segment>
+<tableSpace>2E0B76C0-1EF0-D9FD-2CF1-C08FB950B00A</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TYPE_ID" id="7A99A74E-D21C-7440-FFFC-D322AD36B8D8">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:03:22 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TYPE_NAME" id="8C9387F0-1FAA-8E23-8A56-AB089807D305">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:03:22 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="INMUEBLE_TYPE_PK" id="5C0CC5B1-6AB3-AA55-02CF-45EB52F15799">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-19 23:03:22 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<schemaObject>066420E9-A71D-E368-8AD4-4AC7A4F6E26E</schemaObject>
+<segment>065B2E7F-5F05-5264-702E-35CEA1DCAD58</segment>
+<tableSpace>2E0B76C0-1EF0-D9FD-2CF1-C08FB950B00A</tableSpace>
+<indexSegment>065B2E7F-5F05-5264-702E-35CEA1DCAD58</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E1B92D64-4C1A-3074-2066-B623BC849175" schemaObject="066420E9-A71D-E368-8AD4-4AC7A4F6E26E" name="JOURNAL">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:22:28 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<importedID>E80DBAA1-9888-CBBD-4E50-6BF1760C34A1</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="JOURNAL_ID" id="76986550-926B-06B0-1FEA-3C40F1053D12">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:22:28 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<importedID>A2E6DDC5-7AC6-0AB3-B1DB-313D39FFE4C2</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JOURNAL_ADDRESS" id="8AA585B1-990F-59B7-1868-20FEA99E8CF9">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:22:28 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<importedID>52A2AD93-80B3-5C53-61CF-52D07F05C34B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F9EFC84B-2DE4-DA61-E0A2-0B41CDD502B7" referredColumn="3C6B8289-6BD9-81C0-15FD-A8C7C9091B62"/>
+</associations>
+</Column>
+<Column name="JOURNAL_NAME" id="C6790725-5702-5552-F954-05B1A08740A1">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:22:28 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<importedID>23545497-E2D5-69F9-B679-967CCFB09083</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JOURNAL_TELEPHONE" id="FB8D54A0-E65E-AAA3-0A5C-5EFA1962B0A9">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:22:28 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<importedID>5D4AF9EF-210A-47CF-AF50-FA3AD24D0610</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JOURNAL_FAX" id="FDD2A866-E0D6-A633-9F14-0C0BC5C9100F">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:22:28 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<importedID>AD5B349F-4FAC-8FF1-48F7-60BB6E47F8B1</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JOURNAL_CONTACT" id="207572CA-310C-C5A6-776E-26C3FB5D0B64">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:22:28 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<importedID>4A43B1BA-9D50-78DF-48A8-F04C8E40F738</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F39EE63F-45E3-D15B-478B-8145F19D944B" name="JOURNAL_PK">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:22:28 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<importedID>DA257C19-FC7C-4A4A-B1B5-2F2EEC994F14</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="76986550-926B-06B0-1FEA-3C40F1053D12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BA33FBA8-02EB-B230-312E-E99507C4C122" schemaObject="066420E9-A71D-E368-8AD4-4AC7A4F6E26E" name="JOURNAL_PK">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:22:28 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<importedID>F94919A2-5DF7-6A2A-BD9B-E576C0F3AC7E</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="76986550-926B-06B0-1FEA-3C40F1053D12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C36C3741-13F9-44F5-6633-F50B3058C942" name="JOU_ADDRESS_FK">
+<createdBy>ley</createdBy>
+<createdTime>2016-07-18 23:22:28 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8AA585B1-990F-59B7-1868-20FEA99E8CF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

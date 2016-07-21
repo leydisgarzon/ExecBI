@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="INMOBILIARIA" directorySegmentName="seg_0" id="AB3326EC-8F3F-00D2-E4B2-DC833B5238CD">
+<sourceConnName>InmobiliariaBD</sourceConnName>
+<sourceObjName>INMOBILIARIA</sourceObjName>
+<createdBy>ley</createdBy>
+<createdTime>2016-07-20 15:47:44 UTC</createdTime>
+<ownerDesignName>InmobiliariaBD_DDL</ownerDesignName>
+<schemaObject>066420E9-A71D-E368-8AD4-4AC7A4F6E26E</schemaObject>
+</UserOraclev10g>
