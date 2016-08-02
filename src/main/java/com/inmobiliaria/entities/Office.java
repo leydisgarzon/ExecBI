@@ -5,6 +5,8 @@
  */
 
 package com.inmobiliaria.entities;
+import com.fasterxml.jackson.annotation.JsonView;
+import com.mkyong.web.jsonview.Views;
 import java.util.ArrayList;
 
 /**
@@ -12,7 +14,11 @@ import java.util.ArrayList;
  * @author ley
  */
 public class Office {
-   private int id, fax, telephone;
+   private int id;
+   @JsonView(Views.Public.class)
+   private StringBuilder name;
+   @JsonView(Views.Public.class)
+   private int telephone,fax;
    private Address address;
    private Manager manager;
    private ArrayList<Employee> employees;
@@ -91,6 +97,19 @@ public class Office {
 
     public void setSupervisors(ArrayList<Supervisor> supervisors) {
         this.supervisors = supervisors;
+    }
+
+    public StringBuilder getName() {
+        return name;
+    }
+
+    public void setName(StringBuilder name) {
+        this.name = name;
+    }
+    
+    @Override
+    public String toString(){
+        return "Office [name=" + name + ", fax=" + fax + ", tel=" + telephone + "]";
     }
    
 }
