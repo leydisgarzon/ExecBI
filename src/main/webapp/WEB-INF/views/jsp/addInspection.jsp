@@ -24,7 +24,7 @@
         
         <div class="container" style="min-height: 80%">
             <h1>Insert Inspection</h1>
-            <form class="form-horizontal" id="addInspec-form">
+            <form method="post" class="form-horizontal" id="addInspec-form">
                             <div class="form-group form-group-lg">
                                     <label class="col-sm-2 control-label">Date</label>
                                     <div class="col-sm-10">
@@ -46,7 +46,7 @@
                             
                             <div class="form-group">
                                     <div class="col-sm-offset-2 col-sm-10">
-                                            <button method="POST" type="submit" id="bth-addInspec"
+                                            <button type="submit" id="bth-addInspec"
                                                     class="btn btn-primary btn-lg" >Insert</button>
                                     </div>
                             </div>

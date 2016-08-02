@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package com.inmobiliaria.controllers;
-
+import java.io.Console;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -22,13 +22,14 @@ public class InspectionController {
     private static final Logger logger = LoggerFactory.getLogger(InspectionController.class);
     @RequestMapping(value="/add", method = RequestMethod.GET)
     public String addInspection(Model model){
-        logger.trace("Metodo GET");
+        
+        logger.debug("Metodo GET");
      return "addInspection";
     }
     
     @RequestMapping(value="/add", method = RequestMethod.POST)
     public String addInspection(){
-        logger.trace("Metodo POST");
-     return "addOffice";
+        logger.debug("Metodo POST");
+     return "redirect:/addOffice";
     }
 }
