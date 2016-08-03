@@ -27,7 +27,8 @@ $(document).ready(function() {
 		insert["name"] = $("#name").val();
 		insert["telephone"] = $("#telephone").val();
                 insert["fax"] = $("#fax").val();
-                var url = $("#rutaBase").val() + "insert/office/getInsertResult";
+                //var url = $("#rutaBase").val() + "insert/office/getInsertResult";
+                var url = $("#rutaBase").val() + "addOffice";
                 
                 
 		$.ajax({

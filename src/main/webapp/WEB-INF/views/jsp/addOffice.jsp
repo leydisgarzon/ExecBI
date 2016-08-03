@@ -24,7 +24,7 @@
         <div id="response">
             
         </div>
-        <div class="container" style="min-height: 80%">
+        <div class="container" style="min-height: 80%; border: 1px black solid">
             <h1>Insert Office</h1>
             <form class="form-horizontal" id="addOffice-form">
                             <div class="form-group form-group-lg">

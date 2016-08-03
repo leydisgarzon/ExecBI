@@ -4,12 +4,14 @@
  * and open the template in the editor.
  */
 package com.inmobiliaria.controllers;
-import com.fasterxml.jackson.annotation.JsonView;
+/*import com.fasterxml.jackson.annotation.JsonView;
 import com.inmobiliaria.entities.Office;
 import com.mkyong.web.jsonview.Views;
 import com.inmobiliaria.model.AjaxResponseBodyOffice;
+
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;*/
 
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,15 +21,16 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class OfficeAjaxController {
-    //Office offi;
-    @JsonView(Views.Public.class)
-    @RequestMapping(value = "/insert/office/getInsertResult")
+    //Este codigo se paso para OfficeController.java
+    
+    /*@JsonView(Views.Public.class)
+    //@RequestMapping(value = "/insert/office/getInsertResult")
+    @RequestMapping(value = "/addOffice", method = RequestMethod.POST)
     public AjaxResponseBodyOffice getSearchResultViaAjax(@RequestBody Office office) {
 
 		AjaxResponseBodyOffice result = new AjaxResponseBodyOffice();
                 
-                result.setCode("200");
-                result.setMsg("Resultado ok");
+                
 		if (isValid(office)) {
 			
 				result.setCode("200");
@@ -58,6 +61,6 @@ public class OfficeAjaxController {
 		}
 
 		return valid;
-	}
+	}*/
     }
 
