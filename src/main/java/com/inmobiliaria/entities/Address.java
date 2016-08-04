@@ -11,7 +11,7 @@ package com.inmobiliaria.entities;
  */
 public class Address {
     
-    private StringBuilder city, street, number;
+    private String city, street, number;
     private int id;
     public int getId() {
         return id;
@@ -21,27 +21,27 @@ public class Address {
         this.id = id;
     }
     
-    public StringBuilder getCity() {
+    public String getCity() {
         return city;
     }
 
-    public void setCity(StringBuilder city) {
+    public void setCity(String city) {
         this.city = city;
     }
 
-    public StringBuilder getStreet() {
+    public String getStreet() {
         return street;
     }
 
-    public void setStreet(StringBuilder street) {
+    public void setStreet(String street) {
         this.street = street;
     }
 
-    public StringBuilder getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(StringBuilder number) {
+    public void setNumber(String number) {
         this.number = number;
     }
     

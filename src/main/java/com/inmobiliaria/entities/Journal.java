@@ -10,7 +10,7 @@ package com.inmobiliaria.entities;
  * @author ley
  */
 public class Journal {
-    private StringBuilder name, contact_name;
+    private String name, contact_name;
     private int telephone, fax;
     private Address address;
     private int id;
@@ -22,19 +22,19 @@ public class Journal {
     public void setId(int id) {
         this.id = id;
     }
-    public StringBuilder getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(StringBuilder name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public StringBuilder getContact_name() {
+    public String getContact_name() {
         return contact_name;
     }
 
-    public void setContact_name(StringBuilder contact_name) {
+    public void setContact_name(String contact_name) {
         this.contact_name = contact_name;
     }
 

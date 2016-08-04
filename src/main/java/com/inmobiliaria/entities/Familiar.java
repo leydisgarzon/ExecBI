@@ -10,7 +10,7 @@ package com.inmobiliaria.entities;
  * @author ley
  */
 public class Familiar {
-    private StringBuilder name, relation;
+    private String name, relation;
     private int telephone;
     private Address address;
     private int id;
@@ -23,19 +23,19 @@ public class Familiar {
         this.id = id;
     }
 
-    public StringBuilder getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(StringBuilder name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public StringBuilder getRelation() {
+    public String getRelation() {
         return relation;
     }
 
-    public void setRelation(StringBuilder relation) {
+    public void setRelation(String relation) {
         this.relation = relation;
     }
 

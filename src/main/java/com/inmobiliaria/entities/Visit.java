@@ -11,7 +11,7 @@ import java.time.LocalDate;
  */
 public class Visit {
     private LocalDate date;
-    private StringBuilder comments;
+    private String comments;
     private Property property;
     private Renter renter;
     private int id;
@@ -32,11 +32,11 @@ public class Visit {
         this.date = date;
     }
 
-    public StringBuilder getComments() {
+    public String getComments() {
         return comments;
     }
 
-    public void setComments(StringBuilder comments) {
+    public void setComments(String comments) {
         this.comments = comments;
     }
 

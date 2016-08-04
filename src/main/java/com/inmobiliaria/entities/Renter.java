@@ -12,7 +12,7 @@ package com.inmobiliaria.entities;
 public class Renter {
     private int id, telephone;
     private PropertyType prop_type;
-    private StringBuilder name;
+    private String name;
     private float max_import;
     private Office office;
     private Address address;
@@ -33,11 +33,11 @@ public class Renter {
         this.telephone = telephone;
     }
 
-    public StringBuilder getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(StringBuilder name) {
+    public void setName(String name) {
         this.name = name;
     }
 

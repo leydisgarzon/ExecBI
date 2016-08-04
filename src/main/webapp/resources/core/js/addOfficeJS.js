@@ -5,8 +5,20 @@
  */
 
 $(document).ready(function() {
+                $("#checkbox").mouseup(function() {
+			// Disable the managger data
+                        if($("#checkbox").prop("checked")=== false){   
+                            $("#mgData").prop("disabled",null);
+                            //$("#mgData").removeAttr("disabled");
+                            $("#mgList").prop("disabled","true");
+                        }
+                        else{
+                                $("#mgData").prop("disabled","true");
+                                $("#mgList").prop("disabled",null)
+                        }
+		});
 
-		$("#addOffice-form").submit(function(event) {
+		/*$("#addOffice-form").submit(function(event) {
                        
 			// Disble the search button
 			enableInsertButton(false);
@@ -17,11 +29,11 @@ $(document).ready(function() {
 
 			insertViaAjax();
 
-		});
+		});*/
 
 	});
 
-	function insertViaAjax() {
+	/*function insertViaAjax() {
 
 		var insert = {};
 		insert["name"] = $("#name").val();
@@ -62,4 +74,4 @@ $(document).ready(function() {
 		var json = "<h4>Ajax Response</h4><pre>"
 				+ JSON.stringify(data, null, 4) + "</pre>";
 		$('#response').html(json);
-	}
+	}*/

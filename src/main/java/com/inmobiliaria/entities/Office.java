@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class Office {
    private int id;
    @JsonView(Views.Public.class)
-   private StringBuilder name;
+   private String name;
    @JsonView(Views.Public.class)
    private int telephone,fax;
    private Address address;
@@ -66,6 +66,8 @@ public class Office {
         this.manager = manager;
     }
 
+       
+
     public ArrayList<Employee> getEmployees() {
         return employees;
     }
@@ -99,11 +101,11 @@ public class Office {
         this.supervisors = supervisors;
     }
 
-    public StringBuilder getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(StringBuilder name) {
+    public void setName(String name) {
         this.name = name;
     }
     

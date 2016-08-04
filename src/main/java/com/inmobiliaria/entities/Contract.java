@@ -12,7 +12,7 @@ import java.time.LocalDate;
 public class Contract {
     private int id, month_duration;
     private float impor, deposit_import;
-    private StringBuilder pay_type;
+    private String pay_type;
     private boolean deposit;
     private LocalDate date_in, date_out;  
     private Employee employee;
@@ -51,11 +51,11 @@ public class Contract {
         this.deposit_import = deposit_import;
     }
 
-    public StringBuilder getPay_type() {
+    public String getPay_type() {
         return pay_type;
     }
 
-    public void setPay_type(StringBuilder pay_type) {
+    public void setPay_type(String pay_type) {
         this.pay_type = pay_type;
     }
 

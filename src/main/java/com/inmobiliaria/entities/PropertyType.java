@@ -10,7 +10,7 @@ package com.inmobiliaria.entities;
  * @author ley
  */
 public class PropertyType {
-    private StringBuilder property_type;
+    private String property_type;
     private int id;
     
     public int getId() {
@@ -21,11 +21,11 @@ public class PropertyType {
         this.id = id;
     }
 
-    public StringBuilder getProperty_type() {
+    public String getProperty_type() {
         return property_type;
     }
 
-    public void setProperty_type(StringBuilder property_type) {
+    public void setProperty_type(String property_type) {
         this.property_type = property_type;
     }
 

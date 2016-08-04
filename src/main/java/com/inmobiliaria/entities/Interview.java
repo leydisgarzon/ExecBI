@@ -13,7 +13,7 @@ public class Interview {
     private LocalDate date;
     private Employee employee;
     private Renter renter;
-    private StringBuilder comments;
+    private String comments;
     private int id;
     
     public int getId() {
@@ -41,11 +41,11 @@ public class Interview {
     }
 
     
-    public StringBuilder getComments() {
+    public String getComments() {
         return comments;
     }
 
-    public void setComments(StringBuilder comments) {
+    public void setComments(String comments) {
         this.comments = comments;
     }
 

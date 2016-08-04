@@ -11,7 +11,7 @@ package com.inmobiliaria.entities;
  */
 public class Proprietor {
     private int id, telephone;
-    private StringBuilder name;
+    private String name;
     private Address address;
 
     public int getId() {
@@ -30,11 +30,11 @@ public class Proprietor {
         this.telephone = telephone;
     }
 
-    public StringBuilder getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(StringBuilder name) {
+    public void setName(String name) {
         this.name = name;
     }
 

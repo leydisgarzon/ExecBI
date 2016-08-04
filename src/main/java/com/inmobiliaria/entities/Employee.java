@@ -10,17 +10,17 @@ import java.time.LocalDate;
  * @author ley
  */
 public class Employee {
-    private int id, telephone,dni;
-    private StringBuilder name, job;
-    private LocalDate birthday, date_in;
-    private float salary, speed_write;
-    private Office office;
-    private Familiar familiar;
-    private Supervisor supervisor;
+    protected int id, telephone,dni;
+    protected String name, job;
+    protected LocalDate birthday, date_in;
+    protected float salary, speed_write;
+    protected Office office;
+    protected Familiar familiar;
+    protected Supervisor supervisor;
    // private boolean isSupervisor;
-    private Address address;    
+    protected Address address;    
 
-    public Employee(int id, int telephone, int dni, StringBuilder name, StringBuilder job, LocalDate birthday, LocalDate date_in, float salary, Office office, Address address, float speed_write,Familiar familiar) {
+    public Employee(int id, int telephone, int dni, String name, String job, LocalDate birthday, LocalDate date_in, float salary, Office office, Address address, float speed_write,Familiar familiar) {
         this.id = id;
         this.telephone = telephone;
         this.dni = dni;
@@ -36,7 +36,7 @@ public class Employee {
         this.address = address;
     }
     
-    public Employee(int id, int telephone, int dni, StringBuilder name, StringBuilder job, LocalDate birthday, LocalDate date_in, float salary, Office office, Address address, Familiar familiar) {
+    public Employee(int id, int telephone, int dni, String name, String job, LocalDate birthday, LocalDate date_in, float salary, Office office, Address address, Familiar familiar) {
         this.id = id;
         this.telephone = telephone;
         this.dni = dni;
@@ -51,6 +51,11 @@ public class Employee {
         this.familiar = familiar;
         this.address = address;
     }
+
+    public Employee() {
+    }
+    
+    
     
     public int getId() {
         return id;
@@ -76,19 +81,19 @@ public class Employee {
         this.dni = dni;
     }
 
-    public StringBuilder getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(StringBuilder name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public StringBuilder getJob() {
+    public String getJob() {
         return job;
     }
 
-    public void setJob(StringBuilder job) {
+    public void setJob(String job) {
         this.job = job;
     }
 
@@ -162,5 +167,9 @@ public class Employee {
     public void setFamiliar(Familiar familiar) {
         this.familiar = familiar;
     }
-           
+     
+    @Override
+    public String toString(){
+        return "Employee [name=" + name + ", tel=" + telephone + "]";
+    }
 }

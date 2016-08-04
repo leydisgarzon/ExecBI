@@ -23,7 +23,7 @@ public class Supervisor extends Employee {
         this.employees = employees;
     }
 
-    public Supervisor(int id, int telephone, int dni, StringBuilder name, StringBuilder job, LocalDate birthday, LocalDate date_in, float salary, Office office, Address address, float speed_write, Familiar familiar) {
+    public Supervisor(int id, int telephone, int dni, String name, String job, LocalDate birthday, LocalDate date_in, float salary, Office office, Address address, float speed_write, Familiar familiar) {
         super(id, telephone, dni, name, job, birthday, date_in, salary, office, address, speed_write, familiar);
     }
 
