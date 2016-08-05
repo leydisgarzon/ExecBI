@@ -5,10 +5,21 @@
  */
 package com.inmobiliaria.services;
 
+import com.inmobiliaria.dao.OfficeDao;
+import com.inmobiliaria.entities.Office;
+import javax.annotation.Resource;
+import org.springframework.stereotype.Service;
+
 /**
  *
  * @author ley
  */
+@Service
 public class OfficeService {
-    
+    @Resource
+    private OfficeDao officeDao;
+
+    public void insertar(Office office) {
+        this.officeDao.insertar(office);
+    }
 }

@@ -1,8 +1,11 @@
 package com.mkyong.config;
  
+import javax.sql.DataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
@@ -28,5 +31,20 @@ public class SpringWebConfig extends WebMvcConfigurerAdapter {
 		viewResolver.setSuffix(".jsp");
 		return viewResolver;
 	}
+        
+        @Bean
+        public DataSource dataSource() {
+            DriverManagerDataSource dataSource = new DriverManagerDataSource();
+            dataSource.setDriverClassName("oracle.jdbc.OracleDriver");
+            dataSource.setUsername("Inmobiliaria");
+            dataSource.setPassword("admin");
+            dataSource.setUrl("jdbc:oracle:thin:@localhost:1521:xe");
+            return dataSource;
+        }
  
+        @Bean
+        public JdbcTemplate jdbcTemplate() {
+            JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource());
+            return jdbcTemplate;
+        }
 }
