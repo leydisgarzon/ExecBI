@@ -50,19 +50,19 @@
                             <div class="form-group form-group-lg">
                                     <label class="col-sm-2 control-label">City</label>
                                     <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="city">
+                                        <f:input path="address.city" type="text" class="form-control" id="city"/>
                                     </div>
                             </div>
                             <div class="form-group form-group-lg">
                                     <label class="col-sm-2 control-label">House Number</label>
                                     <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="number">
+                                            <f:input path="address.number" type="text" class="form-control" id="number"/>
                                     </div>
                             </div>
                             <div class="form-group form-group-lg">
                                     <label class="col-sm-2 control-label">Street</label>
                                     <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="street">
+                                            <f:input path="address.street" type="text" class="form-control" id="street"/>
                                     </div>
                             </div>
                             <input type="hidden" id="rutaBase" value="${home}">

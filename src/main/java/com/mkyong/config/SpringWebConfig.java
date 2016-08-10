@@ -5,7 +5,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
+//import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
+//import org.springframework.transaction.PlatformTransactionManager;
+//import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
@@ -16,6 +19,7 @@ import org.springframework.web.servlet.view.JstlView;
 @Configuration
 //@ComponentScan({ "com.mkyong.web" })
 @ComponentScan({ "com" })
+//@EnableTransactionManagement
 public class SpringWebConfig extends WebMvcConfigurerAdapter {
  
 	@Override
@@ -41,6 +45,11 @@ public class SpringWebConfig extends WebMvcConfigurerAdapter {
             dataSource.setUrl("jdbc:oracle:thin:@localhost:1521:xe");
             return dataSource;
         }
+        
+        /*@Bean
+        public PlatformTransactionManager txManager() {
+            return new DataSourceTransactionManager(dataSource());
+        }*/
  
         @Bean
         public JdbcTemplate jdbcTemplate() {
