@@ -38,12 +38,11 @@ import org.springframework.jdbc.support.KeyHolder;
  */
 @Repository
 public class OfficeDao {
-
+    
+    private static final org.slf4j.Logger loggerOff = LoggerFactory.getLogger(OfficeDao.class);
+        
     @Resource
     private JdbcTemplate jdbcTemplate;
-
-    @Resource
-    private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
     @Resource
     private OracleJdbcTemplate oracleJdbcTemplate;
@@ -55,9 +54,6 @@ public class OfficeDao {
     public void setOracleJdbcTemplate(OracleJdbcTemplate oracleJdbcTemplate) {
         this.oracleJdbcTemplate = oracleJdbcTemplate;
     }
-
-    //private static final Logger loggerOff = LoggerFactory.getLogger(OfficeDao.class);
-    private static final org.slf4j.Logger loggerOff = LoggerFactory.getLogger(OfficeDao.class);
 
     public JdbcTemplate getJdbcTemplate() {
         return jdbcTemplate;

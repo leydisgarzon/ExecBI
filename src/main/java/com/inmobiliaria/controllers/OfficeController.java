@@ -16,7 +16,6 @@ import com.inmobiliaria.entities.Office;
 import com.inmobiliaria.services.OfficeService;
 
 import javax.annotation.Resource;
-import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -58,7 +57,6 @@ public class OfficeController {
             try {
             
                 this.officeService.insertar(office);
-                //logger.debug("Inserción Satisfactoria "+ office.getAddress().getCity()+ office.getAddress().getNumber() + office.getAddress().getStreet());
             } 
             catch (Exception e) {
             

@@ -58,12 +58,12 @@ public class SpringWebConfig extends WebMvcConfigurerAdapter {
             JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource());
             return jdbcTemplate;
         }
-        
+        /*
         @Bean
         public NamedParameterJdbcTemplate namedParameterJdbcTemplate() {
             NamedParameterJdbcTemplate namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(dataSource());
             return namedParameterJdbcTemplate;
-        }
+        }*/
         
         @Bean
         public OracleJdbcTemplate oracleJdbcTemplate() {
