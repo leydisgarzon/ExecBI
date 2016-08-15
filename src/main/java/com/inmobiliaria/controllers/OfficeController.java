@@ -11,7 +11,6 @@ import com.mkyong.web.jsonview.Views;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;*/
-import com.inmobiliaria.entities.Address;
 import com.inmobiliaria.entities.Office;
 
 import com.inmobiliaria.services.OfficeService;
@@ -40,28 +39,31 @@ public class OfficeController {
     @Resource
     private OfficeService officeService;
     
-    private static final Logger logger = LoggerFactory.getLogger(OfficeController.class);
+    private static final org.slf4j.Logger logger = LoggerFactory.getLogger(OfficeController.class);
+    
     @RequestMapping(value="/addOffice", method = RequestMethod.GET)
     public String printOffice(Model model) {
+                logger.debug("entra en get");
                 Office office = new Office();
                 model.addAttribute("office", office);
 		return "addOffice";
     }
     
-    @RequestMapping(value = "/addOffice",method = RequestMethod.POST)
+    @RequestMapping(value = "/addOffice", method = RequestMethod.POST)
     public String saveOffice(Model model, Office office){
-        
+        logger.debug("entra en post");
         if(!isValid(office))
             logger.debug("faltan datos");
         else{
-        try {
+            try {
             
-            this.officeService.insertar(office);
-            //logger.debug("Inserción Satisfactoria "+ office.getAddress().getCity()+ office.getAddress().getNumber() + office.getAddress().getStreet());
-        } catch (Exception e) {
+                this.officeService.insertar(office);
+                //logger.debug("Inserción Satisfactoria "+ office.getAddress().getCity()+ office.getAddress().getNumber() + office.getAddress().getStreet());
+            } 
+            catch (Exception e) {
             
-            logger.debug(e.getMessage());
-        }
+                logger.debug(e.getMessage());
+            }
         }
         return printOffice(model);
     }
@@ -103,4 +105,14 @@ public class OfficeController {
 
 		return valid;
 	}
+
+    public OfficeService getOfficeService() {
+        return officeService;
+    }
+
+    public void setOfficeService(OfficeService officeService) {
+        this.officeService = officeService;
+    }
+        
+        
 }

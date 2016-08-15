@@ -26,7 +26,7 @@ public class OfficeService {
     /*@Resource
     private AddressDao addressDao;*/
     
-    private static final Logger logger = LoggerFactory.getLogger(OfficeService.class);
+    private static final org.slf4j.Logger logger = LoggerFactory.getLogger(OfficeService.class);
     //@Transactional
     public void insertar(Office office) {
         try{
@@ -35,9 +35,19 @@ public class OfficeService {
             this.officeDao.insertar(office);
         }
          catch (Exception e) {
-            logger.debug(e.getMessage());
+            logger.debug(e.toString());
         }
         
     }
+
+    public OfficeDao getOfficeDao() {
+        return officeDao;
+    }
+
+    public void setOfficeDao(OfficeDao officeDao) {
+        this.officeDao = officeDao;
+    }
+    
+    
 
 }

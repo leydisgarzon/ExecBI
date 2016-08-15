@@ -1,10 +1,12 @@
 package com.mkyong.config;
  
+import com.inmobiliaria.dao.util.OracleJdbcTemplate;
 import javax.sql.DataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 //import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 //import org.springframework.transaction.PlatformTransactionManager;
@@ -55,5 +57,17 @@ public class SpringWebConfig extends WebMvcConfigurerAdapter {
         public JdbcTemplate jdbcTemplate() {
             JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource());
             return jdbcTemplate;
+        }
+        
+        @Bean
+        public NamedParameterJdbcTemplate namedParameterJdbcTemplate() {
+            NamedParameterJdbcTemplate namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(dataSource());
+            return namedParameterJdbcTemplate;
+        }
+        
+        @Bean
+        public OracleJdbcTemplate oracleJdbcTemplate() {
+            OracleJdbcTemplate oracleJdbcTemplate = new OracleJdbcTemplate(dataSource());
+            return oracleJdbcTemplate;
         }
 }

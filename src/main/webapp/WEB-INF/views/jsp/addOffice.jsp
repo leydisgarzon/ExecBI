@@ -76,6 +76,6 @@
                             </div>
                     </f:form>
         </div>
-    <script src="${jsAjaxOffice}"></script>
+    <!--<script src="${jsAjaxOffice}"></script>-->
     </body>
 </html>
