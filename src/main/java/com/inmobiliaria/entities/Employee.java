@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 package com.inmobiliaria.entities;
+import com.fasterxml.jackson.annotation.JsonView;
+import com.mkyong.web.jsonview.Views;
 import java.time.LocalDate;
 /**
  *
@@ -11,6 +13,7 @@ import java.time.LocalDate;
  */
 public class Employee {
     protected int id, telephone,dni;
+    @JsonView(Views.Public.class)
     protected String name, job;
     protected LocalDate birthday, date_in;
     protected float salary, speed_write;

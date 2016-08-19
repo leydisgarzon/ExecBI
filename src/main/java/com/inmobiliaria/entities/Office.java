@@ -14,12 +14,15 @@ import java.util.ArrayList;
  * @author ley
  */
 public class Office {
+   @JsonView(Views.Public.class)
    private int id;
    @JsonView(Views.Public.class)
    private String name;
    @JsonView(Views.Public.class)
    private int telephone,fax;
+   @JsonView(Views.Public.class)
    private Address address;
+   @JsonView(Views.Public.class)
    private Manager manager;
    private ArrayList<Employee> employees;
    private ArrayList<Renter> renters;

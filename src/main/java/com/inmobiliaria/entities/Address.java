@@ -5,13 +5,17 @@
  */
 package com.inmobiliaria.entities;
 
+import com.fasterxml.jackson.annotation.JsonView;
+import com.mkyong.web.jsonview.Views;
+
 /**
  *
  * @author ley
  */
 public class Address {
-    
+    @JsonView(Views.Public.class)
     private String city, street; 
+    @JsonView(Views.Public.class)
     private int id,number;
     public int getId() {
         return id;

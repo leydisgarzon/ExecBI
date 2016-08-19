@@ -7,6 +7,7 @@ package com.inmobiliaria.services;
 
 import com.inmobiliaria.dao.OfficeDao;
 import com.inmobiliaria.entities.Office;
+import java.util.List;
 import javax.annotation.Resource;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -32,6 +33,14 @@ public class OfficeService {
             logger.debug(e.toString());
         }
         
+    }
+    
+    public List getAllOffices() {
+        return this.officeDao.getAllOffices();
+    }
+    
+    public Office getOfficeById(int id) {
+        return this.officeDao.getOfficeById(id);
     }
 
     public OfficeDao getOfficeDao() {
