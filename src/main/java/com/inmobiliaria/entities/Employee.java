@@ -12,6 +12,7 @@ import java.time.LocalDate;
  * @author ley
  */
 public class Employee {
+    @JsonView(Views.Public.class)
     protected int id, telephone,dni;
     @JsonView(Views.Public.class)
     protected String name, job;

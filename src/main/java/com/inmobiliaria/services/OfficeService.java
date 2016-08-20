@@ -42,6 +42,14 @@ public class OfficeService {
     public Office getOfficeById(int id) {
         return this.officeDao.getOfficeById(id);
     }
+    
+    public void deleteOfficeById(int id) {
+        this.officeDao.deleteOfficeById(id);
+    }
+    
+    public void updateOffice(Office office){
+        this.officeDao.updateOffice(office);
+    }
 
     public OfficeDao getOfficeDao() {
         return officeDao;
@@ -49,8 +57,7 @@ public class OfficeService {
 
     public void setOfficeDao(OfficeDao officeDao) {
         this.officeDao = officeDao;
-    }
-    
+    }   
     
 
 }

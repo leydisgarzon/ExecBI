@@ -96,6 +96,16 @@ public class OfficeDao {
                 + "on office.OFFICE_MANAGER = EMPLOYEE.EMPLOYEE_ID where office_id = ?", new OfficeMapper(), id);
     }
     
+     public void deleteOfficeById(int id){
+         // AL ELIMINAR LA DIRECCION SE ELIMINA EN CASCADA LA OFFICINA POR RESTRICCION DE BD
+        this.jdbcTemplate.update("DELETE FROM ADDRESS WHERE ADDRESS_ID  = (SELECT OFFICE_ADDRESS FROM OFFICE WHERE OFFICE.OFFICE_ID = ?)", id);
+    }
+     
+    public void updateOffice(Office office){
+        this.jdbcTemplate.update("UPDATE OFFICE SET OFFICE_FAX = ?,OFFICE_TELEPHONE = ?,OFFICE_NAME = ? WHERE OFFICE_ID = ? ", office.getFax(),office.getTelephone(),office.getName(),office.getId());
+        this.jdbcTemplate.update("UPDATE ADDRESS SET CITY = ?, STREET = ?, HOUSE_NO = ?  WHERE ADDRESS_ID  = ?", office.getAddress().getCity(),office.getAddress().getStreet(),office.getAddress().getNumber(),office.getAddress().getId());
+    }
+    
     private static final class OfficeMapper implements RowMapper<Office> {
         
         @Override

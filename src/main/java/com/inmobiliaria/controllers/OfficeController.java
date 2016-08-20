@@ -27,88 +27,102 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 //import org.springframework.web.bind.annotation.RequestMethod;
-
 /**
  *
  * @author ley
  */
-
 @Controller
 @RequestMapping("/office")
 public class OfficeController {
-    
+
     @Resource
     private OfficeService officeService;
-    
+
     private static final org.slf4j.Logger logger = LoggerFactory.getLogger(OfficeController.class);
-    
-    @RequestMapping(value="/add", method = RequestMethod.GET)
+
+    @RequestMapping(value = "/add", method = RequestMethod.GET)
     public String printOffice(Model model) {
-                logger.debug("entra en get");
-                Office office = new Office();
-                model.addAttribute("office", office);
-		return "addOffice";
+        logger.debug("entra en get");
+        Office office = new Office();
+        model.addAttribute("office", office);
+        return "addOffice";
     }
-    
+
     @RequestMapping(value = "/add", method = RequestMethod.POST)
-    public String saveOffice(Model model, Office office){
+    public String saveOffice(Model model, Office office) {
         logger.debug("entra en post");
-        if(!isValid(office))
+        if (!isValid(office)) {
             logger.debug("faltan datos");
-        else{
+        } else {
             try {
-            
+
                 this.officeService.insertar(office);
-            } 
-            catch (Exception e) {
-            
+            } catch (Exception e) {
+
                 logger.debug(e.getMessage());
             }
         }
         return printOffice(model);
     }
-    
+
     @RequestMapping(value = "/list", method = RequestMethod.GET)
-    public String listOffice(Model model){
+    public String listOffice(Model model) {
         List offices = this.officeService.getAllOffices();
-        model.addAttribute("offices",offices);
+        model.addAttribute("offices", offices);
         return "listOffice";
     }
-    
+
     @RequestMapping(value = "/edit", method = RequestMethod.GET)
-    public String editOffice(Model model){
+    public String getEditOffice(Model model) {
         List offices = this.officeService.getAllOffices();
         Office office = new Office();
         model.addAttribute("office", office);
-        model.addAttribute("offices",offices);
+        model.addAttribute("offices", offices);
         return "editOffice";
     }
-    
+
     @ResponseBody
     @JsonView(Views.Public.class)
     @RequestMapping(value = "/edit/editOffice", method = RequestMethod.POST)
     public AjaxResponseBodyOffice getSearchOfficeViaAjax(@RequestBody int office_id) {
-                logger.debug("entra " + office_id);
-		AjaxResponseBodyOffice result = new AjaxResponseBodyOffice();
-                
-		if (office_id > 0) {
-                    
-                                Office return_office = this.officeService.getOfficeById(office_id);
-			
-				result.setCode("200");
-				result.setMsg("Resultado ok");
-				result.setResult(return_office);
-			 
+        logger.debug("entra " + office_id);
+        AjaxResponseBodyOffice result = new AjaxResponseBodyOffice();
 
-		} else {
-			result.setCode("400");
-			result.setMsg("Please select an valid office!");
-		}
+        if (office_id > 0) {
 
-		//AjaxResponseBodyOffice will be converted into json format and send back to client.
-		return result;
+            Office return_office = this.officeService.getOfficeById(office_id);
 
-	}
+            result.setCode("200");
+            result.setMsg("Resultado ok");
+            result.setResult(return_office);
+
+        } else {
+            result.setCode("400");
+            result.setMsg("Please select an valid office!");
+        }
+
+        //AjaxResponseBodyOffice will be converted into json format and send back to client.
+        return result;
+
+    }
+
+    @RequestMapping(value = "/edit", params="edit", method = RequestMethod.POST)
+    public String editOffice(Model model, Office office) {
+        /*List offices = this.officeService.getAllOffices();
+        Office office = new Office();
+        model.addAttribute("office", office);
+        model.addAttribute("offices", offices);*/
+        this.officeService.updateOffice(office);
+        return getEditOffice(model);
+    }
+    
+    @RequestMapping(value = "/edit", params="delete", method = RequestMethod.POST)
+    public String deleteOffice(Model model,Office office) {
+        this.officeService.deleteOfficeById(office.getId());
+       //return "redirect:/office/list";
+       return getEditOffice(model);
+    }
+
     /*@ResponseBody
     @JsonView(Views.Public.class)
     @RequestMapping(value = "/addOffice", method = RequestMethod.POST)
@@ -132,21 +146,21 @@ public class OfficeController {
 		return result;
 
 	}
-*/
-	private boolean isValid(Office office) {
+     */
+    private boolean isValid(Office office) {
 
-		boolean valid = true;
+        boolean valid = true;
 
-		if (office == null) {
-			valid = false;
-		}
+        if (office == null) {
+            valid = false;
+        }
 
-		if ((office.getName().length()==0) || (office.getTelephone()== 0)) {
-			valid = false;
-		}
+        if ((office.getName().length() == 0) || (office.getTelephone() == 0)) {
+            valid = false;
+        }
 
-		return valid;
-	}
+        return valid;
+    }
 
     public OfficeService getOfficeService() {
         return officeService;
@@ -155,6 +169,5 @@ public class OfficeController {
     public void setOfficeService(OfficeService officeService) {
         this.officeService = officeService;
     }
-        
-        
+
 }
