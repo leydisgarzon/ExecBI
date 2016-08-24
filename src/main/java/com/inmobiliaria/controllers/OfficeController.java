@@ -42,7 +42,6 @@ public class OfficeController {
 
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public String printOffice(Model model) {
-        logger.debug("entra en get");
         Office office = new Office();
         model.addAttribute("office", office);
         return "addOffice";
@@ -50,7 +49,6 @@ public class OfficeController {
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     public String saveOffice(Model model, Office office) {
-        logger.debug("entra en post");
         if (!isValid(office)) {
             logger.debug("faltan datos");
         } else {
@@ -75,7 +73,8 @@ public class OfficeController {
     @RequestMapping(value = "/edit", method = RequestMethod.GET)
     public String getEditOffice(Model model) {
         List offices = this.officeService.getAllOffices();
-        Office office = new Office();
+        Office office = (Office) offices.get(0);
+        //Office office = new Office();
         model.addAttribute("office", office);
         model.addAttribute("offices", offices);
         return "editOffice";
@@ -85,13 +84,12 @@ public class OfficeController {
     @JsonView(Views.Public.class)
     @RequestMapping(value = "/edit/editOffice", method = RequestMethod.POST)
     public AjaxResponseBodyOffice getSearchOfficeViaAjax(@RequestBody int office_id) {
-        logger.debug("entra " + office_id);
         AjaxResponseBodyOffice result = new AjaxResponseBodyOffice();
 
         if (office_id > 0) {
 
             Office return_office = this.officeService.getOfficeById(office_id);
-
+            logger.debug("get office address " + return_office.getAddress().getId());
             result.setCode("200");
             result.setMsg("Resultado ok");
             result.setResult(return_office);
@@ -108,10 +106,6 @@ public class OfficeController {
 
     @RequestMapping(value = "/edit", params="edit", method = RequestMethod.POST)
     public String editOffice(Model model, Office office) {
-        /*List offices = this.officeService.getAllOffices();
-        Office office = new Office();
-        model.addAttribute("office", office);
-        model.addAttribute("offices", offices);*/
         this.officeService.updateOffice(office);
         return getEditOffice(model);
     }

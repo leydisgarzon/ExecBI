@@ -43,6 +43,7 @@ function display(data) {
     $('#office_street').val(data.result['address']['street']);
     $('#office_number').val(data.result['address']['number']);
     $('#office_manager').val(data.result['manager']['name']);
+    $('#addressId').val(data.result['address']['id']);
     
     /*
     //para adicionar elementos html

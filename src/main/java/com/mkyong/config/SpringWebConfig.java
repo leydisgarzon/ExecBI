@@ -7,10 +7,10 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
-//import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
-//import org.springframework.transaction.PlatformTransactionManager;
-//import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
@@ -20,8 +20,8 @@ import org.springframework.web.servlet.view.JstlView;
 @EnableWebMvc
 @Configuration
 //@ComponentScan({ "com.mkyong.web" })
-@ComponentScan({ "com" })
-//@EnableTransactionManagement
+@ComponentScan(basePackages = "com")
+@EnableTransactionManagement
 public class SpringWebConfig extends WebMvcConfigurerAdapter {
  
 	@Override
@@ -48,11 +48,11 @@ public class SpringWebConfig extends WebMvcConfigurerAdapter {
             return dataSource;
         }
         
-        /*@Bean
-        public PlatformTransactionManager txManager() {
+        @Bean
+        public PlatformTransactionManager transactionManager() {
             return new DataSourceTransactionManager(dataSource());
-        }*/
- 
+        }
+
         @Bean
         public JdbcTemplate jdbcTemplate() {
             JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource());

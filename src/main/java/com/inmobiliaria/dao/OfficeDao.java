@@ -102,6 +102,7 @@ public class OfficeDao {
     }
      
     public void updateOffice(Office office){
+        loggerOff.debug("entra " + office.getAddress().getId());
         this.jdbcTemplate.update("UPDATE OFFICE SET OFFICE_FAX = ?,OFFICE_TELEPHONE = ?,OFFICE_NAME = ? WHERE OFFICE_ID = ? ", office.getFax(),office.getTelephone(),office.getName(),office.getId());
         this.jdbcTemplate.update("UPDATE ADDRESS SET CITY = ?, STREET = ?, HOUSE_NO = ?  WHERE ADDRESS_ID  = ?", office.getAddress().getCity(),office.getAddress().getStreet(),office.getAddress().getNumber(),office.getAddress().getId());
     }
@@ -124,6 +125,8 @@ public class OfficeDao {
             address.setNumber(rs.getInt("house_no"));
             
             office.setAddress(address);
+            
+            loggerOff.debug("get office address " + office.getAddress().getId());
 
             //Office's manager
             Manager manager = new Manager();

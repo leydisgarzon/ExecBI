@@ -11,6 +11,7 @@ import java.util.List;
 import javax.annotation.Resource;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 //import org.springframework.transaction.annotation.Transactional;
 
 /**
@@ -18,13 +19,13 @@ import org.springframework.stereotype.Service;
  * @author ley
  */
 @Service
-//@Transactional(readOnly = true)
+@Transactional(readOnly = true)
 public class OfficeService {
     @Resource
     private OfficeDao officeDao;
     
     private static final org.slf4j.Logger logger = LoggerFactory.getLogger(OfficeService.class);
-    //@Transactional
+    @Transactional
     public void insertar(Office office) {
         try{
             this.officeDao.insertar(office);
