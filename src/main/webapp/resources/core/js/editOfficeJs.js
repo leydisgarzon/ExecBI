@@ -7,9 +7,9 @@
 
 $(document).ready(function () {
     $("#idformOffice").find('input, button, select').focus(function () {
-        if ($('#id_divMessaje').index() !== -1) {
+        //if ($('#id_divMessaje').index() !== -1) {
             $('#id_divMessaje').remove();
-        }
+        //}
     });
     $("#list_offices").change(insertViaAjax);
 });
