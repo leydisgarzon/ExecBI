@@ -6,10 +6,16 @@
 
 
 $(document).ready(function () {
+    $("#idformOffice").find('input, button, select').focus(function () {
+        if ($('#id_divMessaje').index() !== -1) {
+            $('#id_divMessaje').remove();
+        }
+    });
     $("#list_offices").change(insertViaAjax);
 });
 
 function insertViaAjax() {
+
     var id = $("#list_offices").val();
     var url = $("#rutaBase").val() + "office/edit/editOffice";
     $.ajax({
@@ -44,11 +50,11 @@ function display(data) {
     $('#office_number').val(data.result['address']['number']);
     $('#office_manager').val(data.result['manager']['name']);
     $('#addressId').val(data.result['address']['id']);
-    
+
     /*
-    //para adicionar elementos html
-    var $selec = $('<option />', {id: 'select' + this.begin + "_" + this.end + "_" + this.unit, value: this.begin + "_" + this.end + "_" + this.unit});
-    $selec.appendTo("#list_offices")
-    //para manipular el elemento creado
-    $selec.prop('selected',true)*/
+     //para adicionar elementos html
+     var $selec = $('<option />', {id: 'select' + this.begin + "_" + this.end + "_" + this.unit, value: this.begin + "_" + this.end + "_" + this.unit});
+     $selec.appendTo("#list_offices")
+     //para manipular el elemento creado
+     $selec.prop('selected',true)*/
 }   
