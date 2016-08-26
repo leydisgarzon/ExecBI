@@ -48,4 +48,9 @@ public class Address {
     public void setNumber(int number) {
         this.number = number;
     }    
+    
+    @Override
+    public String toString(){
+        return this.id + " " +this.city + " " + this.street + " " + this.number;
+    }
 }

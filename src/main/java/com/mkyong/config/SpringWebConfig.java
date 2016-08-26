@@ -46,12 +46,7 @@ public class SpringWebConfig extends WebMvcConfigurerAdapter {
             dataSource.setPassword("admin");
             dataSource.setUrl("jdbc:oracle:thin:@localhost:1521:xe");
             return dataSource;
-        }
-        
-        @Bean
-        public PlatformTransactionManager transactionManager() {
-            return new DataSourceTransactionManager(dataSource());
-        }
+        } 
 
         @Bean
         public JdbcTemplate jdbcTemplate() {
@@ -64,6 +59,11 @@ public class SpringWebConfig extends WebMvcConfigurerAdapter {
             NamedParameterJdbcTemplate namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(dataSource());
             return namedParameterJdbcTemplate;
         }*/
+        
+        @Bean
+        public PlatformTransactionManager transactionManager() {
+            return new DataSourceTransactionManager(dataSource());
+        }
         
         @Bean
         public OracleJdbcTemplate oracleJdbcTemplate() {

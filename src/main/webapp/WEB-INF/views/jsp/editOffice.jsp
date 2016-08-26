@@ -20,6 +20,7 @@
                 <div class="panel-heading">
                     <h3>Edit Office</h3>
                 </div>
+                <%@include file="/WEB-INF/views/jsp/comun/message.jsp"%>
                 <!--<div id="feedback"></div>-->
                 <div class="panel-body">
                     <f:form role="form" method="post" commandName="office" id="idformOffice" class="form-horizontal">

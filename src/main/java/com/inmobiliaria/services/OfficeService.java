@@ -48,6 +48,7 @@ public class OfficeService {
         this.officeDao.deleteOfficeById(id);
     }
     
+    @Transactional
     public void updateOffice(Office office){
         this.officeDao.updateOffice(office);
     }

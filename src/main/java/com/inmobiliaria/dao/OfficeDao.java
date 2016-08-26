@@ -9,30 +9,16 @@ import com.inmobiliaria.dao.util.OracleJdbcTemplate;
 import com.inmobiliaria.entities.Address;
 import com.inmobiliaria.entities.Manager;
 import com.inmobiliaria.entities.Office;
-import java.sql.CallableStatement;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Types;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.Objects;
 import javax.annotation.Resource;
-import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.dao.DataAccessException;
-import org.springframework.jdbc.core.CallableStatementCreator;
 import org.springframework.stereotype.Repository;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.core.RowMapper;
-import org.springframework.jdbc.core.namedparam.AbstractSqlParameterSource;
-import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
-import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
@@ -45,6 +31,9 @@ import org.springframework.jdbc.support.KeyHolder;
 public class OfficeDao {
     
     private static final org.slf4j.Logger loggerOff = LoggerFactory.getLogger(OfficeDao.class);
+    
+    @Resource
+    private AddressDao addressDao;
     
     @Resource
     private JdbcTemplate jdbcTemplate;
@@ -82,7 +71,7 @@ public class OfficeDao {
         
     }
     
-    public List getAllOffices() {
+    public List<Office> getAllOffices() {
         return this.jdbcTemplate.query("select office_id, OFFICE_NAME, office_manager, EMPLOYEE_NAME, "
                 + "OFFICE_TELEPHONE, OFFICE_FAX, OFFICE_ADDRESS, city, street, house_no  from office "
                 + "inner join address on OFFICE_ADDRESS = ADDRESS_ID left join EMPLOYEE\n"
@@ -102,9 +91,8 @@ public class OfficeDao {
     }
      
     public void updateOffice(Office office){
-        loggerOff.debug("entra " + office.getAddress().getId());
         this.jdbcTemplate.update("UPDATE OFFICE SET OFFICE_FAX = ?,OFFICE_TELEPHONE = ?,OFFICE_NAME = ? WHERE OFFICE_ID = ? ", office.getFax(),office.getTelephone(),office.getName(),office.getId());
-        this.jdbcTemplate.update("UPDATE ADDRESS SET CITY = ?, STREET = ?, HOUSE_NO = ?  WHERE ADDRESS_ID  = ?", office.getAddress().getCity(),office.getAddress().getStreet(),office.getAddress().getNumber(),office.getAddress().getId());
+        addressDao.update(office.getAddress());
     }
     
     private static final class OfficeMapper implements RowMapper<Office> {
@@ -125,8 +113,6 @@ public class OfficeDao {
             address.setNumber(rs.getInt("house_no"));
             
             office.setAddress(address);
-            
-            loggerOff.debug("get office address " + office.getAddress().getId());
 
             //Office's manager
             Manager manager = new Manager();

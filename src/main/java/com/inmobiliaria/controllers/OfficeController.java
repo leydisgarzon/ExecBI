@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.inmobiliaria.entities.Office;
 
 import com.inmobiliaria.services.OfficeService;
+import com.inmobiliaria.util.Message;
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -104,17 +105,24 @@ public class OfficeController {
 
     }
 
-    @RequestMapping(value = "/edit", params="edit", method = RequestMethod.POST)
+    @RequestMapping(value = "/edit", params = "edit", method = RequestMethod.POST)
     public String editOffice(Model model, Office office) {
-        this.officeService.updateOffice(office);
+        Message message = null;
+        try {
+            this.officeService.updateOffice(office);
+            message = new Message("Actualizacion satisfactoria.", Message.INFO);
+        } catch (Exception e) {
+            message = new Message("Ha ocurrido un error en la actualizacion.", Message.ERROR);
+        }
+        model.addAttribute("msg", message);
         return getEditOffice(model);
     }
-    
-    @RequestMapping(value = "/edit", params="delete", method = RequestMethod.POST)
-    public String deleteOffice(Model model,Office office) {
+
+    @RequestMapping(value = "/edit", params = "delete", method = RequestMethod.POST)
+    public String deleteOffice(Model model, Office office) {
         this.officeService.deleteOfficeById(office.getId());
-       //return "redirect:/office/list";
-       return getEditOffice(model);
+        //return "redirect:/office/list";
+        return getEditOffice(model);
     }
 
     /*@ResponseBody
