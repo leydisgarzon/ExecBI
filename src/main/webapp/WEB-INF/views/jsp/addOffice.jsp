@@ -10,7 +10,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
         <title>Insert Office</title>
         <%@include file="/WEB-INF/views/jsp/comun/intoHead.jsp"%>
-        <spring:url value="/resources/core/js/addOfficeJS.js" var="jsAjaxOffice"/>
+        <spring:url value="/resources/core/js/addOfficeJS.js" var="jsAddOffice"/>
 
     </head>
     <body>
@@ -73,6 +73,6 @@
                 </div>
             </div>
         </div>
-        <!--<script src="${jsAjaxOffice}"></script>-->
+        <!--<script src="${jsAddOffice}"></script>-->
     </body>
 </html>

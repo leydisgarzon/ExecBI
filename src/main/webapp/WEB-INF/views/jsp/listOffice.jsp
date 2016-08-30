@@ -19,10 +19,10 @@
         <%@include file="/WEB-INF/views/jsp/comun/menu.jsp"%>
 
         <div class="container content">
-            <div class=' panel panel-default'>
+            <div class='panel panel-default'>
                 <div class="panel-heading"><h3>Offices:</h3></div>
                 <div class="panel-body">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-responsive">
                         <thead>
                             <tr>
                                 <th>Name</th>

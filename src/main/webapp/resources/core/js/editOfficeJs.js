@@ -8,12 +8,64 @@
 $(document).ready(function () {
     $("#idformOffice").find('input, button, select').focus(function () {
         //if ($('#id_divMessaje').index() !== -1) {
-            $('#id_divMessaje').remove();
+        $('#id_divMessaje').remove();
         //}
     });
+
+    validation();
     $("#list_offices").change(insertViaAjax);
 });
 
+$.validator.addMethod('letters', function (value, element) {
+    return this.optional(element) || /^[a-z' ]+$/i.test(value);
+}, 'solo letras o apostrofe');
+
+function validation() {
+    $("#idformOffice").validate({
+        rules: {
+            name: {
+                required: true,
+                letters: true
+            },
+            telephone: {
+                required: true,
+                digits: true
+            },
+            fax: {
+                digits: true
+            },
+            'address.number': {
+                required: true,
+                digits: true
+            },
+            'address.city': {
+                required: true,
+                lettersonly: true
+            },
+            'address.street': "required"
+        },
+        messages: {
+            name: {
+                required: "Este campo es obligatorio",
+                lettersonly: "Solo letras"
+            },
+            telephone: {
+                required: "Debe llenar este campo",
+                digits: 'Solo digitos'
+            },
+            fax: {
+                digits: 'Solo digitos'
+            }
+            ,
+            'address.number': {
+                digits: 'Solo digitos'
+            },
+            'address.street': {
+                required: 'Ponga la direcc exacta'
+            }
+        }
+    });
+}
 function insertViaAjax() {
 
     var id = $("#list_offices").val();
