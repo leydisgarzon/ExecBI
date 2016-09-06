@@ -4,27 +4,35 @@
  * and open the template in the editor.
  */
 package com.inmobiliaria.entities;
+
 import com.fasterxml.jackson.annotation.JsonView;
 import com.mkyong.web.jsonview.Views;
-import java.time.LocalDate;
+import java.util.Date;
+import org.springframework.format.annotation.DateTimeFormat;
+//import java.time.LocalDate;
+
 /**
  *
  * @author ley
  */
 public class Employee {
+
     @JsonView(Views.Public.class)
-    protected int id, telephone,dni;
+    protected int id, telephone, dni;
     @JsonView(Views.Public.class)
     protected String name, job;
-    protected LocalDate birthday, date_in;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    protected Date birthday;//, date_in;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    protected Date date_in;
     protected float salary, speed_write;
     protected Office office;
     protected Familiar familiar;
     protected Supervisor supervisor;
-   // private boolean isSupervisor;
-    protected Address address;    
+    protected boolean isAdmin;
+    protected Address address;
 
-    public Employee(int id, int telephone, int dni, String name, String job, LocalDate birthday, LocalDate date_in, float salary, Office office, Address address, float speed_write,Familiar familiar) {
+    public Employee(int id, int telephone, int dni, String name, String job, Date birthday, Date date_in, float salary, Office office, Address address, float speed_write, Familiar familiar) {
         this.id = id;
         this.telephone = telephone;
         this.dni = dni;
@@ -36,11 +44,11 @@ public class Employee {
         this.speed_write = speed_write;
         this.office = office;
         this.familiar = familiar;
-        //this.isSupervisor = supervisor;
+        this.isAdmin = true;
         this.address = address;
     }
-    
-    public Employee(int id, int telephone, int dni, String name, String job, LocalDate birthday, LocalDate date_in, float salary, Office office, Address address, Familiar familiar) {
+
+    public Employee(int id, int telephone, int dni, String name, String job, Date birthday, Date date_in, float salary, Office office, Address address, Familiar familiar) {
         this.id = id;
         this.telephone = telephone;
         this.dni = dni;
@@ -51,16 +59,14 @@ public class Employee {
         this.salary = salary;
         this.speed_write = 0;
         this.office = office;
-        //this.isSupervisor = supervisor;
+        this.isAdmin = false;
         this.familiar = familiar;
         this.address = address;
     }
 
     public Employee() {
     }
-    
-    
-    
+
     public int getId() {
         return id;
     }
@@ -101,19 +107,19 @@ public class Employee {
         this.job = job;
     }
 
-    public LocalDate getBirthday() {
+    public Date getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(LocalDate birthday) {
+    public void setBirthday(Date birthday) {
         this.birthday = birthday;
     }
 
-    public LocalDate getDate_in() {
+    public Date getDate_in() {
         return date_in;
     }
 
-    public void setDate_in(LocalDate date_in) {
+    public void setDate_in(Date date_in) {
         this.date_in = date_in;
     }
 
@@ -141,17 +147,18 @@ public class Employee {
         this.office = office;
     }
 
+    public boolean getIsAdmin() {
+        return isAdmin;
+    }
+
+    public void setIsAdmin(boolean isAdmin) {
+        this.isAdmin = isAdmin;
+    }
 
     public Supervisor getSupervisor() {
         return supervisor;
     }
 
-    /*public boolean getSupervisor() {
-    return isSupervisor;
-    }
-    public void setSupervisor(boolean supervisor) {
-    this.isSupervisor = supervisor;
-    }*/
     public void setSupervisor(Supervisor supervisor) {
         this.supervisor = supervisor;
     }
@@ -171,9 +178,9 @@ public class Employee {
     public void setFamiliar(Familiar familiar) {
         this.familiar = familiar;
     }
-     
+
     @Override
-    public String toString(){
+    public String toString() {
         return "Employee [name=" + name + ", tel=" + telephone + "]";
     }
 }

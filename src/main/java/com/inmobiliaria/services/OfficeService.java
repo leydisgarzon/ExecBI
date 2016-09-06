@@ -35,7 +35,7 @@ public class OfficeService {
         
     }
     
-    public List getAllOffices() {
+    public List<Office> getAllOffices() {
         return this.officeDao.getAllOffices();
     }
     

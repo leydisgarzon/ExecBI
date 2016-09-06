@@ -50,17 +50,16 @@ public class OfficeController {
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     public String saveOffice(Model model, Office office) {
-        if (!isValid(office)) {
+       /* if (!isValid(office)) {
             logger.debug("faltan datos");
-        } else {
+        } else {*/
             try {
 
                 this.officeService.insertar(office);
             } catch (Exception e) {
-
                 logger.debug(e.getMessage());
             }
-        }
+        //}
         return printOffice(model);
     }
 

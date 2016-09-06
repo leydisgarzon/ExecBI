@@ -24,4 +24,8 @@ public class AddressService {
         addressDao.insertar(address);
     }
     
+    public int insertAndReturnId(Address address){
+        return addressDao.insertAndReturnId(address);
+    }
+    
 }

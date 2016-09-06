@@ -17,5 +17,13 @@
                 <li><a href='<spring:url value="/manager/list"/>'>List Manager</a></li>
             </ul>
         </li>
+        <li class="dropdown">
+            <a id="managerOptions" data-toggle="dropdown" class="dropdown-toggle" href="#">Gestionar Employee <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href='<spring:url value="/employee/add"/>'>Insert Employee</a></li>
+                <li><a href='<spring:url value="/employee/edit"/>'>Edit Employee</a></li>
+                <li><a href='<spring:url value="/employee/list"/>'>List Employee</a></li>
+            </ul>
+        </li>
     </ul>
 </aside>

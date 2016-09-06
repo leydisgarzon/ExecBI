@@ -9,7 +9,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
         <%@include file="/WEB-INF/views/jsp/comun/intoHead.jsp"%>
-        <spring:url value="/resources/core/js/editOfficeJs.js" var="editOfficeJs"/>
+        <spring:url value="/resources/core/js/editOfficeJs.js" var="especificJs"/>
         <title>Edit Office</title>
     </head>
     <body>
@@ -84,6 +84,6 @@
                 </div>
             </div>
         </div>
-        <script src="${editOfficeJs}"></script>
+        <script src="${especificJs}"></script>
     </body>
 </html>

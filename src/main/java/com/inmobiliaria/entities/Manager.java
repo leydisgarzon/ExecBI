@@ -5,6 +5,7 @@
  */
 package com.inmobiliaria.entities;
 import java.time.LocalDate;
+import java.util.Date;
 /**
  *
  * @author ley
@@ -13,7 +14,7 @@ public class Manager extends Employee{
     private LocalDate date_boss;
     private float bonus, car_expense;
 
-    public Manager(LocalDate date_boss, float bonus, float car_expense, int id, int telephone, int dni, String name, String job, LocalDate birthday, LocalDate date_in, float salary, Office office, Address address, float speed_write, Familiar familiar) {
+    public Manager(LocalDate date_boss, float bonus, float car_expense, int id, int telephone, int dni, String name, String job, Date birthday, Date date_in, float salary, Office office, Address address, float speed_write, Familiar familiar) {
         super(id, telephone, dni, name, job, birthday, date_in, salary, office, address, speed_write, familiar);
         this.date_boss = date_boss;
         this.bonus = bonus;
