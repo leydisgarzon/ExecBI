@@ -9,6 +9,7 @@ import com.inmobiliaria.dao.AddressDao;
 import com.inmobiliaria.dao.EmployeeDao;
 import com.inmobiliaria.dao.FamiliarDao;
 import com.inmobiliaria.entities.Employee;
+import com.inmobiliaria.entities.Familiar;
 import java.util.List;
 import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
@@ -33,23 +34,12 @@ public class EmployeeService {
 
     @Transactional
     public void insertEmployee(Employee employee) {
-        //try{
-        int addressFamId = addressDao.insertAndReturnId(employee.getFamiliar().getAddress());
-        if (addressFamId > 0) {
-            employee.getFamiliar().getAddress().setId(addressFamId);
-            int familiarId = familiarDao.insertFamiliar(employee.getFamiliar());
-
-            int addressId = familiarId > 0 ? addressDao.insertAndReturnId(employee.getAddress()) : 0;
-            if (addressId > 0) {
-                employee.getFamiliar().setId(familiarId);
-                employee.getAddress().setId(addressId);
-                employeeDao.insertEmployee(employee);
-            }
-
-        }
+        employee.getAddress().setId(addressDao.insertAndReturnId(employee.getAddress()));
+        employee.setId(employeeDao.insertEmployeeReturnId(employee));
+        familiarDao.insertFamiliar(employee);
     }
-    
-    public List<Employee> getSupervisors(int officeId){
+
+    public List<Employee> getSupervisors(int officeId) {
         return this.employeeDao.getSupervisors(officeId);
     }
 }

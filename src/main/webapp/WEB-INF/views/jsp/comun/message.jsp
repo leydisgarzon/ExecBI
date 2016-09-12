@@ -14,9 +14,9 @@
             <c:set var="headerMessaje" scope="page" value="¡Ok!"/>
         </c:when>
     </c:choose>
-    <div id="id_divMessaje">
+
         <div class="${cssMessaje}" id="alertaMensaje">
             <strong>${headerMessaje}</strong> ${msg.message}
         </div>
-    </div> 
+
 </c:if>

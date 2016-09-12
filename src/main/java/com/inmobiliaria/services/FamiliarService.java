@@ -27,12 +27,12 @@ public class FamiliarService {
     private AddressDao addressDao;
     
     @Transactional
-    public int insertFamiliar(Familiar familiar) {
+    public int insertFamiliar(Familiar familiar, Long idEmployee) {
         //try{
         int addressId = addressDao.insertAndReturnId(familiar.getAddress());
         if (addressId > 0) {
             familiar.getAddress().setId(addressId);
-            return familiarDao.insertFamiliar(familiar);
+            return familiarDao.insertFamiliar(familiar, idEmployee);
         } else {
             return 0;
         }

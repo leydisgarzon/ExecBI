@@ -11,15 +11,24 @@ package com.inmobiliaria.entities;
  */
 public class Familiar {
     private String name, relation;
-    private int telephone;
+    private Long telephone;
     private Address address;
-    private int id;
+    private Long id;
+    private Employee employee;
+
+    public Employee getEmployee() {
+        return employee;
+    }
+
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
+    }
     
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -39,11 +48,11 @@ public class Familiar {
         this.relation = relation;
     }
 
-    public int getTelephone() {
+    public Long getTelephone() {
         return telephone;
     }
 
-    public void setTelephone(int telephone) {
+    public void setTelephone(Long telephone) {
         this.telephone = telephone;
     }
 

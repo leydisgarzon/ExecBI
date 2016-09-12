@@ -8,6 +8,7 @@ package com.inmobiliaria.entities;
 import com.fasterxml.jackson.annotation.JsonView;
 import com.mkyong.web.jsonview.Views;
 import java.util.Date;
+import java.util.List;
 import org.springframework.format.annotation.DateTimeFormat;
 //import java.time.LocalDate;
 
@@ -18,76 +19,76 @@ import org.springframework.format.annotation.DateTimeFormat;
 public class Employee {
 
     @JsonView(Views.Public.class)
-    protected int id, telephone, dni;
+    protected Long id, telephone, dni;
     @JsonView(Views.Public.class)
     protected String name, job;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     protected Date birthday;//, date_in;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
-    protected Date date_in;
-    protected float salary, speed_write;
+    protected Date dateIn;
+    protected float salary, speedWrite;
     protected Office office;
-    protected Familiar familiar;
+    protected List<Familiar> familiars;
     protected Supervisor supervisor;
     protected boolean isAdmin;
     protected Address address;
 
-    public Employee(int id, int telephone, int dni, String name, String job, Date birthday, Date date_in, float salary, Office office, Address address, float speed_write, Familiar familiar) {
+    public Employee(Long id, Long telephone, Long dni, String name, String job, Date birthday, Date dateIn, float salary, Office office, Address address, float speedWrite, List<Familiar> familiars) {
         this.id = id;
         this.telephone = telephone;
         this.dni = dni;
         this.name = name;
         this.job = job;
         this.birthday = birthday;
-        this.date_in = date_in;
+        this.dateIn = dateIn;
         this.salary = salary;
-        this.speed_write = speed_write;
+        this.speedWrite = speedWrite;
         this.office = office;
-        this.familiar = familiar;
+        this.familiars = familiars;
         this.isAdmin = true;
         this.address = address;
     }
 
-    public Employee(int id, int telephone, int dni, String name, String job, Date birthday, Date date_in, float salary, Office office, Address address, Familiar familiar) {
+    public Employee(Long id, Long telephone, Long dni, String name, String job, Date birthday, Date dateIn, float salary, Office office, Address address, List<Familiar> familiars) {
         this.id = id;
         this.telephone = telephone;
         this.dni = dni;
         this.name = name;
         this.job = job;
         this.birthday = birthday;
-        this.date_in = date_in;
+        this.dateIn = dateIn;
         this.salary = salary;
-        this.speed_write = 0;
+        this.speedWrite = 0;
         this.office = office;
         this.isAdmin = false;
-        this.familiar = familiar;
+        this.familiars = familiars;
         this.address = address;
     }
 
     public Employee() {
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public int getTelephone() {
+    public Long getTelephone() {
         return telephone;
     }
 
-    public void setTelephone(int telephone) {
+    public void setTelephone(Long telephone) {
         this.telephone = telephone;
     }
 
-    public int getDni() {
+    public Long getDni() {
         return dni;
     }
 
-    public void setDni(int dni) {
+    public void setDni(Long dni) {
         this.dni = dni;
     }
 
@@ -115,12 +116,12 @@ public class Employee {
         this.birthday = birthday;
     }
 
-    public Date getDate_in() {
-        return date_in;
+    public Date getDateIn() {
+        return dateIn;
     }
 
-    public void setDate_in(Date date_in) {
-        this.date_in = date_in;
+    public void setDateIn(Date dateIn) {
+        this.dateIn = dateIn;
     }
 
     public float getSalary() {
@@ -131,12 +132,12 @@ public class Employee {
         this.salary = salary;
     }
 
-    public float getSpeed_write() {
-        return speed_write;
+    public float getSpeedWrite() {
+        return speedWrite;
     }
 
-    public void setSpeed_write(float speed_write) {
-        this.speed_write = speed_write;
+    public void setSpeedWrite(float speedWrite) {
+        this.speedWrite = speedWrite;
     }
 
     public Office getOffice() {
@@ -171,16 +172,16 @@ public class Employee {
         this.address = address;
     }
 
-    public Familiar getFamiliar() {
-        return familiar;
+    public List<Familiar> getFamiliars() {
+        return familiars;
     }
 
-    public void setFamiliar(Familiar familiar) {
-        this.familiar = familiar;
+    public void setFamiliars(List<Familiar> familiars) {
+        this.familiars = familiars;
     }
 
     @Override
     public String toString() {
-        return "Employee [name=" + name + ", tel=" + telephone + "]";
+        return "Employee [name=" + name + ", tel=" + telephone +  ", sal=" + salary + "]";
     }
 }

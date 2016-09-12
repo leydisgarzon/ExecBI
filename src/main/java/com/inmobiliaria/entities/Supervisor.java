@@ -7,6 +7,7 @@ package com.inmobiliaria.entities;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  *
@@ -23,7 +24,7 @@ public class Supervisor extends Employee {
         this.employees = employees;
     }
 
-    public Supervisor(int id, int telephone, int dni, String name, String job, Date birthday, Date date_in, float salary, Office office, Address address, float speed_write, Familiar familiar) {
+    public Supervisor(Long id, Long telephone, Long dni, String name, String job, Date birthday, Date date_in, float salary, Office office, Address address, float speed_write, List<Familiar> familiar) {
         super(id, telephone, dni, name, job, birthday, date_in, salary, office, address, speed_write, familiar);
     }
 

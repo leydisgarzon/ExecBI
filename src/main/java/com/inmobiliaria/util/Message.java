@@ -5,6 +5,9 @@
  */
 package com.inmobiliaria.util;
 
+import com.fasterxml.jackson.annotation.JsonView;
+import com.mkyong.web.jsonview.Views;
+
 /**
  *
  * @author ley
@@ -14,7 +17,9 @@ public class Message {
     public static final int ERROR = 0;
     public static final int WARN = 1;
     public static final int INFO = 2;
+    @JsonView(Views.Public.class)
     private String message;
+    @JsonView(Views.Public.class)
     private int type;
 
     public Message(String message, int type) {

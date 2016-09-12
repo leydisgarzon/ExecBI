@@ -5,13 +5,12 @@
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
         <title>Insert Employee</title>
         <%@include file="/WEB-INF/views/jsp/comun/intoHead.jsp"%>
-        <spring:url value="/resources/core/js/addEmployeeJS.js" var="especificJs"/>-
-
+        <spring:url value="/resources/core/js/addEmployeeJS.js" var="especificJs"/>
     </head>
     <body>
         <%@include file="/WEB-INF/views/jsp/comun/layerStructureBegin.jsp"%>
 
-        <f:form role="form" method="post" commandName="employee"  class="form-horizontal" id="addOffice-form">
+        <f:form role="form" method="post" commandName="employee"  class="form-horizontal" id="addEmployee-form">
             <fieldset id="emData">
                 <legend>Employee Data</legend>
                 <div class="form-group form-group-sm">
@@ -55,7 +54,7 @@
 
                     <label class="col-sm-1 control-label">Date in</label>
                     <div class="col-sm-3">
-                        <f:input path="date_in" type="date" class="form-control" id="emInDate"/>
+                        <f:input path="dateIn" type="date" class="form-control" id="emInDate"/>
                     </div>
                 </div>
                 <div class="form-group form-group-sm">
@@ -89,50 +88,68 @@
                 </div>
             </fieldset>
 
-<!--            <fieldset>
-                <%--<f:select path="supervisor.id" itemValue="id" itemLabel="name" items="${supervisors}" class="form-control" id="emSupervisor"/>--%>
-            </fieldset>-->
+            <!--            <fieldset>
+            <%--<f:select path="supervisor.id" itemValue="id" itemLabel="name" items="${supervisors}" class="form-control" id="emSupervisor"/>--%>
+        </fieldset>-->
 
             <fieldset id="fmData">
-                <legend>Family Employee Data</legend>
+                <legend>Familiars Employee Data</legend>
                 <div class="form-group form-group-sm">
                     <label class='col-sm-2 control-label'>Name:</label>
                     <div class="col-sm-6">
-                        <f:input class=" form-control" path="familiar.name" type="text" id="fmName"/> 
+                        <%--<f:input class=" form-control" path="familiar.name" type="text" id="fmName"/>--%> 
+                        <input class=" form-control" type="text" id="fmName"/>
                     </div>
 
                     <label class='col-sm-1 control-label'>Relation:</label>
                     <div class="col-sm-3">
-                        <f:input class="form-control" path="familiar.relation" type="text" id="fmRelation"/> 
+                        <%--<f:input class="form-control" path="familiar.relation" type="text" id="fmRelation"/>--%>
+                        <input class="form-control" type="text" id="fmRelation"/>
                     </div>
                 </div>
                 <div class="form-group form-group-sm">
                     <label class='col-sm-2 control-label'>Telephone:</label>
                     <div class="col-sm-6">
-                        <f:input class=" form-control" path="familiar.telephone" type="text" id="fmTel"/> 
+                        <%--<f:input class=" form-control" path="familiar.telephone" type="text" id="fmTel"/>--%>
+                        <input class=" form-control" type="text" id="fmTel"/>
                     </div>
 
                     <label class='col-sm-1 control-label'>City:</label>
                     <div class="col-sm-3">
-                        <f:input class="form-control" path="familiar.address.city" type="text" id="fmCity"/> 
+                        <%--<f:input class="form-control" path="familiar.address.city" type="text" id="fmCity"/>--%>
+                        <input class="form-control" type="text" id="fmCity"/>
                     </div>
                 </div>
                 <div class="form-group form-group-sm">
                     <label class='col-sm-2 control-label'>Street:</label>
                     <div class="col-sm-6">
-                        <f:input class=" form-control" path="familiar.address.street" type="text" id="fmStreet"/> 
+                        <%--<f:input class=" form-control" path="familiar.address.street" type="text" id="fmStreet"/>--%> 
+                        <input class=" form-control" type="text" id="fmStreet"/>
                     </div>
 
                     <label class='col-sm-1 control-label'>Number:</label>
                     <div class="col-sm-3">
-                        <f:input class="form-control" path="familiar.address.number" type="text" id="fmNumber"/> 
+                        <%--<f:input class="form-control" path="familiar.address.number" type="text" id="fmNumber"/>--%> 
+                        <input class="form-control" type="text" id="fmNumber"/>
                     </div>
                 </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-10">
+                        <!--<a class="btn btn-default" href="#" role="button">Link</a>-->
+                        <a  id="addFamiliar" class="btn btn-default btn-xs" href="#fmData">Add</a>
+                        <a id="resetFamiliar" class="btn btn-default btn-xs" href="#fmData">Reset</a>
+                    </div>
+                </div>
+                <div id="listFamiliars">
+                    
+                </div>
             </fieldset>
+            <input type="hidden" id="rutaBase" value="${home}">
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" id="bth-addOffice"
-                            class="btn btn-primary btn-sm">Insert</button>
+                    <button type="submit" id="bth-addEmployee"
+                            class="btn btn-success btn-sm">Insert</button>
+                    <button type="reset" class="btn btn-primary btn-sm">Cancel</button>
                 </div>
             </div>
         </f:form>

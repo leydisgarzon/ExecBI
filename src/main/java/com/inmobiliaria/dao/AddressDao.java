@@ -54,7 +54,7 @@ public class AddressDao {
                 .addValue("street", address.getStreet()).addValue("numb", address.getNumber());
         KeyHolder keyHolder = new GeneratedKeyHolder();
         this.oracleJdbcTemplate.update(myUpdateSQL, myParamSource, keyHolder, new String[]{"ADDRESS_ID"});
-        return keyHolder.getKey() != null ? keyHolder.getKey().intValue() : 0;
+        return keyHolder.getKey().intValue();
     }
 
     public void update(Address address) {

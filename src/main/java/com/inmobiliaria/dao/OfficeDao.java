@@ -117,11 +117,11 @@ public class OfficeDao {
             //Office's manager
             Manager manager = new Manager();
             if (!Objects.isNull(rs.getObject("office_manager"))) {
-                manager.setId(rs.getInt("office_manager"));
+                manager.setId(rs.getLong("office_manager"));
                 manager.setName(rs.getString("EMPLOYEE_NAME"));
             }
             else{
-                manager.setId(-1);
+                manager.setId(new Long(-1));
                 manager.setName("not asigned");
             }         
                 office.setManager(manager);
