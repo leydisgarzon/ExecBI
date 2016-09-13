@@ -9,6 +9,7 @@ import com.inmobiliaria.dao.util.OracleJdbcTemplate;
 import com.inmobiliaria.entities.Employee;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Calendar;
 import java.util.List;
 import javax.annotation.Resource;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -68,21 +69,26 @@ public class EmployeeDao {
     }
     
     public Long insertEmployeeReturnId(Employee employee) {
+        Calendar birth = Calendar.getInstance(),in = Calendar.getInstance();
+        birth.setTime(employee.getBirthday());
+        birth.add(Calendar.DATE, 1);
+        in.setTime(employee.getDateIn());
+        in.add(Calendar.DATE, 1);
         String myUpdateSQLPariente = employee.getSupervisor()== null ? "INSERT INTO EMPLOYEE(EMPLOYEE_NAME,EMPLOYEE_ADDRESS,EMPLOYEE_TELEPHONE,EMPLOYEE_BIRTHDAY,DNI,EMPLOYEE_JOB,EMPLOYEE_DATEIN,SALARY,WRITE_SPEED,EMPLOYEE_OFFICE) "
                 + "VALUES(:name,:address,:telef,:birthday,:dni,:job,:dateIn,:salary,:speed,:office)" 
         : "INSERT INTO EMPLOYEE(EMPLOYEE_NAME,EMPLOYEE_ADDRESS,EMPLOYEE_TELEPHONE,EMPLOYEE_BIRTHDAY,DNI,EMPLOYEE_JOB,EMPLOYEE_DATEIN,SALARY,WRITE_SPEED,EMPLOYEE_OFFICE,EMPLOYEE_SUPERVISOR) "
                 + "VALUES(:name,:address,:telef,:birthday,:dni,:job,:dateIn,:salary,:speed,:office,:supervisor)";  
         
-        SqlParameterSource myParamSource = new MapSqlParameterSource().addValue("birthday", employee.getBirthday())
+        SqlParameterSource myParamSource = new MapSqlParameterSource().addValue("birthday", birth)
                     .addValue("name", employee.getName())
                     .addValue("telef", employee.getTelephone())
                     .addValue("address", employee.getAddress().getId())
                     .addValue("dni", employee.getDni())
                     .addValue("job", employee.getJob())
-                    .addValue("dateIn", employee.getDateIn())
+                    .addValue("dateIn", in)
                     .addValue("salary", employee.getSalary())
-                    .addValue("speed", employee.getDni())
-                    .addValue("office", employee.getJob());
+                    .addValue("speed", employee.getSpeedWrite())
+                    .addValue("office", employee.getOffice().getId());
        if(employee.getSupervisor()== null)
            ((MapSqlParameterSource) myParamSource).addValue("supervisor", employee.getDateIn());
        KeyHolder keyHolder = new GeneratedKeyHolder();   

@@ -64,7 +64,6 @@ public class EmployeeController {
     public Message addEmployee(@RequestBody Employee employee){
         //Message result = null;
         Message result;
-        
         try{
             result = new Message("Success insertion",Message.INFO);
             employeeService.insertEmployee(employee);

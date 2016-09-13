@@ -182,6 +182,6 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee [name=" + name + ", tel=" + telephone +  ", sal=" + salary + "]";
+        return "Employee [name=" + name + ", tel=" + telephone +  ", sal=" + salary + ", birth=" + birthday + ", in=" + dateIn + ", tel=" + telephone + ", dni=" + dni + ", address=" + address.getId() +"]";
     }
 }

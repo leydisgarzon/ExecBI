@@ -7,6 +7,7 @@ package com.inmobiliaria.services;
 
 import com.inmobiliaria.dao.AddressDao;
 import com.inmobiliaria.dao.FamiliarDao;
+import com.inmobiliaria.entities.Employee;
 import com.inmobiliaria.entities.Familiar;
 import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
@@ -27,18 +28,19 @@ public class FamiliarService {
     private AddressDao addressDao;
     
     @Transactional
-    public int insertFamiliar(Familiar familiar, Long idEmployee) {
-        //try{
+    public void insertFamiliar(Employee employee) {
+         familiarDao.insertFamiliar(employee);                
+    }
+    /*public int insertFamiliar(Familiar familiar, Long idEmployee) {
         int addressId = addressDao.insertAndReturnId(familiar.getAddress());
         if (addressId > 0) {
             familiar.getAddress().setId(addressId);
             return familiarDao.insertFamiliar(familiar, idEmployee);
         } else {
             return 0;
-        }
-       /* }catch(Exception e){
-            
-        }*/
-                
-    }
+        }         
+    }*/
+    
+    
+    
 }

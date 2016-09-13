@@ -12,6 +12,7 @@ import com.inmobiliaria.entities.Employee;
 import com.inmobiliaria.entities.Familiar;
 import java.util.List;
 import javax.annotation.Resource;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -31,10 +32,13 @@ public class EmployeeService {
 
     @Resource
     private FamiliarDao familiarDao;
+    
+    private static final org.slf4j.Logger logger = LoggerFactory.getLogger(EmployeeService.class);
 
     @Transactional
     public void insertEmployee(Employee employee) {
         employee.getAddress().setId(addressDao.insertAndReturnId(employee.getAddress()));
+        logger.debug(employee.toString());
         employee.setId(employeeDao.insertEmployeeReturnId(employee));
         familiarDao.insertFamiliar(employee);
     }

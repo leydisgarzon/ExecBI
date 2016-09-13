@@ -95,7 +95,15 @@ $(document).ready(function () {
         event.preventDefault();
         
         insertViaAjax();
-
+        $('#addEmployee-form')[0].reset();
+        $("#tbFamiliars").remove();
+        
+    });
+    
+    $("#addEmployee-form").find('input, button, select').focus(function () {
+        //if ($('#id_divMessaje').index() !== -1) {
+        $('#alertaMensaje').remove();
+        //}
     });
 });
 
@@ -185,5 +193,6 @@ function insertViaAjax() {
 	$('#id_divMessaje').html(msg);
                     
 	}
+        
 
 }

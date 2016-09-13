@@ -49,12 +49,12 @@ public class AddressDao {
     }
 
     public int insertAndReturnId(Address address) {
-        String myUpdateSQL = "INSERT INTO address(city,street,house_no) values(:city,:street,:numb)";
-        SqlParameterSource myParamSource = new MapSqlParameterSource().addValue("city", address.getCity())
-                .addValue("street", address.getStreet()).addValue("numb", address.getNumber());
-        KeyHolder keyHolder = new GeneratedKeyHolder();
-        this.oracleJdbcTemplate.update(myUpdateSQL, myParamSource, keyHolder, new String[]{"ADDRESS_ID"});
-        return keyHolder.getKey().intValue();
+            String myUpdateSQL = "INSERT INTO address(city,street,house_no) values(:city,:street,:numb)";
+            SqlParameterSource myParamSource = new MapSqlParameterSource().addValue("city", address.getCity())
+                    .addValue("street", address.getStreet()).addValue("numb", address.getNumber());
+            KeyHolder keyHolder = new GeneratedKeyHolder();
+            this.oracleJdbcTemplate.update(myUpdateSQL, myParamSource, keyHolder, new String[]{"ADDRESS_ID"});
+            return keyHolder.getKey().intValue();
     }
 
     public void update(Address address) {
